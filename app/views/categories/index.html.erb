@@ -1,0 +1,9 @@
+<p>liste des catégories - resto - bar - hotel -bla bla</p>
+
+
+<% @categories.each do |category| %>
+              <h3> <%= category.name %></h3>
+                <a href=<%= category_path(category) %> class="text-warning stretched-link" > lien </a>
+  <% end %>
+
+<%= link_to "go to spot 1", "/categories/:category_id/spots" %>

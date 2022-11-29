@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     resources :spots, only: [:index]
   end
   resources :spots, only: [:show] do
-  resources :events, only: [:create, :new]
+    resources :events, only: [:create, :new]
   end
   resources :events, only: [:show, :index]
 end
