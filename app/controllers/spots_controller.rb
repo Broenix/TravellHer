@@ -5,16 +5,15 @@ class SpotsController < ApplicationController
 
 
   def index
-    @spots = Spot.all
-
+    @category = Category.find(params[:category_id])
+    @spots = Spot.where(category: @category)
   end
 
 
   def show
-    @spots = Spot.find(params[:id])
+    @spot = Spot.find(params[:id])
+    @events = @spot.events
   end
-
-
 
   private
 

@@ -92,3 +92,4 @@ gin_event = Event.create!(name:"A Gin at the Gin bar", description: "I love gins
 gin_event2 = Event.create!(name:"Another Gin at the Gin bar", description: "I really love gins and the Gin bar seems to be specialized in making some, do you want to join me ?", event_date:"2023-01-17", spot: gin)
 
 puts "... Super-mega-database-de-beau-gosse.final.final2.TRUEFINAL created"
+
