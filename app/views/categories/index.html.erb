@@ -1,11 +1,10 @@
 <p>liste des catégories - resto - bar - hotel -bla bla</p>
 
-<p>
-<%= link_to "go to spot 1", "/categories/1/restaurants" %>
-</p>
 
 <% @categories.each do |category| %>
-              <h3> <%= category.name %></h3>
-              <h3> <%= category.id %></h3>
-                <%# <a href=<%= category_spots_path(spot) %> class="text-warning stretched-link" > lien vers la categories </a> %>
+    <h3> <%= category.name %></h3>
+    <h3> <%= category.photo_url %></h3>
+
+
+<%= link_to "lien vers la cat", category_spots_path(category) %>
   <% end %>
