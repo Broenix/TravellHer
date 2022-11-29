@@ -1,6 +1,8 @@
 <p>list of kind of spot</p>
 
 <% @spots.each do |spot| %>
-    <h3> <%= link_to spot.name, spot_path(spot)%></h3>
+    <h3> <%= spot.name %></h3>
     <h3> <%= spot.photo_url %></h3>
-  <% end %>
+
+<%= link_to "lien vers le spot", spot_path(spot) %>
+<% end %>
