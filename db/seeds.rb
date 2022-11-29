@@ -56,4 +56,3 @@ culey_event = Event.create!(name: "Eat at Culey", description: "I'd love to try 
 gin_event = Event.create!(name:"A Gin at the Gin bar", description: "I love gins and the Gin bar seems to be specialized in making some, do you want to join me ?", event_date:"2023-01-15", spot: gin)
 
 puts "... Super-mega-database-de-beau-gosse.final.final2.TRUEFINAL created"
-
