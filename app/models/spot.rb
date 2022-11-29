@@ -5,4 +5,5 @@ class Spot < ApplicationRecord
   validates :name, presence: true
   validates :location, presence: true
   validates :rating, presence: true
+  validates :photo_url, presence: true
 end
