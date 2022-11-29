@@ -2,7 +2,7 @@
 
 <% @categories.each do |category| %>
     <h3> <%= category.name %></h3>
-    <h3> <%= category.photo_url %></h3>
+    <h3> <%= category.name %></h3>
 
 
 <%= link_to "lien vers la cat", category_spots_path(category) %>
