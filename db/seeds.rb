@@ -22,15 +22,15 @@ hostel.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/category/volunteering.jpg"))
 volunteering = Category.create!(name: "Volunteering")
-hostel.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
+volunteering.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/category/tour.jpg"))
 tour = Category.create!(name: "Tours")
-hostel.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
+tour.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/category/club.jpg"))
 club = Category.create!(name: "Clubs")
-hostel.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
+club.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 
 #User
