@@ -55,6 +55,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_29_112336) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "photo_url"
   end
 
   create_table "events", force: :cascade do |t|
@@ -74,6 +75,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_29_112336) do
     t.bigint "category_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "photo_url"
     t.index ["category_id"], name: "index_spots_on_category_id"
   end
 
