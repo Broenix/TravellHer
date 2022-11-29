@@ -34,7 +34,7 @@ club = Category.create!(name: "Clubs", photo_url:"db/seed/image/category/club.jp
 chloe = User.create!(email: "chloe@mail.com", password:"secret", name:"Chloe", last_name:"Lagneau", username:"Choloroquine", photo_url:"db/seed/image/profil/chloe.jpg", age:25)
 alexandra = User.create!(email: "alexandra@mail.com", password:"secret", name:"Alexandra", last_name:"Courivaud", username: "oOo-Alexa-oOo", photo_url:"db/seed/image/profil/alexandra.jpg", age:32)
 paola = User.create!(email: "paola@mail.com", password:"secret", name:"Paola", last_name:"Barbaud", username:"Paëla", photo_url:"db/seed/image/profil/paola.jpg", age:21)
-thea = User.create!(email: "thea@mail.com", password:"secret", name"Thea", last_name:"Chevalier", username:"Thea-la-voyageuse", photo_url:"db/seed/image/profil/thea.jpg", age:31)
+thea = User.create!(email: "thea@mail.com", password:"secret", name:"Thea", last_name:"Chevalier", username:"Thea-la-voyageuse", photo_url:"db/seed/image/profil/thea.jpg", age:31)
 
 #Spots
 
