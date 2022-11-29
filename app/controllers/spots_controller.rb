@@ -6,15 +6,13 @@ class SpotsController < ApplicationController
 
   def index
     @spots = Spot.all
-
   end
 
 
   def show
-    @spots = Spot.find(params[:id])
+    @spot = Spot.find(params[:id])
+    @events = @spot.events
   end
-
-
 
   private
 
