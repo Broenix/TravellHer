@@ -89,5 +89,7 @@ ongle.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 culey_event = Event.create!(name: "Eat at Culey", description: "I'd love to try to eat in town and this restaurant is getting my attention. Would be nice to have someone to join me in the city.", event_date: "2023-01-12", spot: culey)
 gin_event = Event.create!(name:"A Gin at the Gin bar", description: "I love gins and the Gin bar seems to be specialized in making some, do you want to join me ?", event_date:"2023-01-15", spot: gin)
+gin_event2 = Event.create!(name:"Another Gin at the Gin bar", description: "I really love gins and the Gin bar seems to be specialized in making some, do you want to join me ?", event_date:"2023-01-17", spot: gin)
 
 puts "... Super-mega-database-de-beau-gosse.final.final2.TRUEFINAL created"
+
