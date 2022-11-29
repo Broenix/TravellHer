@@ -1,4 +1,5 @@
 puts "Cleaning database..."
+
 Spot.destroy_all
 User.destroy_all
 Event.destroy_all
@@ -52,3 +53,5 @@ ongle = Spot.create!(name:"Ongle" , location:"C. Schell 452, Lima 15074, Peru", 
 
 culey_event = Event.create!(name: "Eat at Culey", description: "I'd love to try to eat in town and this restaurant is getting my attention. Would be nice to have someone to join me in the city.", event_date: "2023-01-12", spot: culey)
 gin_event = Event.create!(name:"A Gin at the Gin bar", description: "I love gins and the Gin bar seems to be specialized in making some, do you want to join me ?", event_date:"2023-01-15", spot: gin)
+
+puts "... Super-mega-database-de-beau-gosse.final.final2.TRUEFINAL created"
