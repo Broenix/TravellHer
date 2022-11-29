@@ -1,3 +1,4 @@
+
 puts "Cleaning database..."
 Spot.destroy_all
 User.destroy_all
@@ -40,5 +41,3 @@ culey = Spot.create!(name:"Culey" , location:"Calle José Galvez 136 in front of
 #Events
 
 pubevent = Event.create!(name: "Lets have a RDV at the Culey", description: "Lets get some shots at the Culey bar", event_date: "2023-01-12", spot: culey)
-
-#prout
