@@ -5,7 +5,8 @@ class SpotsController < ApplicationController
 
 
   def index
-    @spots = Spot.all
+    @category = Category.find(params[:category_id])
+    @spots = Spot.where(category: @category)
 
   end
 
