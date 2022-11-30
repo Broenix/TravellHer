@@ -15,6 +15,7 @@ class SpotsController < ApplicationController
     @events = @spot.events
   end
 
+
   private
 
   def spot_params
