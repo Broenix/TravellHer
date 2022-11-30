@@ -1,10 +1,15 @@
 <H1>Category index</H1>
 
-<% @categories.each do |category| %>
-    <h3> <%= category.name %></h3>
-    <h3> <%= image_tag category.photo, width:300, height: 300 %>
-
-<%= link_to "lien vers la cat", category_spots_path(category) %>
+<div class="container_spot">
+  <% @categories.each do |category| %>
+      <div class="card mb-3">
+    <%= link_to category_spots_path(category) do %>
+        <div>
+          <h3> <%= category.name %></h3>
+          <h3> <%= image_tag category.photo, width:300, height: 300 %>
+        </div>
+    <% end %>
+    </div>
   <% end %>
 
-<div>
+</div>
