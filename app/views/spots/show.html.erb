@@ -1,8 +1,7 @@
 <p>bonjour voici le spot de ouf</p>
 
-<p> <%= @spot.name %> </p>
-<div><h3> <%= image_tag @spot.photo, width:300, height: 300 %></div>
-
 <% @events.each do |event| %>
 <h3> <%= link_to event.name, event_path(event) %> </h3>
 <% end %>
+
+<%= link_to "create an event",  new_spot_event_path(@spot) %>
