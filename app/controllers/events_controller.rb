@@ -7,24 +7,28 @@ class EventsController < ApplicationController
   end
 
   def show
-    @events = Event.find(params[:id])
+    @event = Event.find(params[:id])
+  end
+
+  def new
+    @event = Event.new # Needed to instantiate the form_with
+    @spot = Spot.find(params[:spot_id])
   end
 
   def create
-    @events = Event.new(events_params)
-    @event.spot = @spots
-    if @event.save
-      redirect_to spot_path(@spots)
-    else
-      render :new, status: :unprocessable_entity
-    end
+    @event = Event.create(events_params)
+      # @event.user_id = current_user.id
+      @spot = Spot.find(params[:spot_id])
+      @event.spot = @spot
+      
+      if @event.save
+        redirect_to events_path
+      else
+        render :new, status: :unprocessable_entity
+      end
   end
 
   private
-
-  def set_spots
-    @spots = spots.find(params[:spots_id])
-  end
 
   def events_params
     params.require(:event).permit(:name, :description, :event_date)

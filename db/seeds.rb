@@ -1,4 +1,3 @@
-
 puts "Cleaning database..."
 
 Spot.destroy_all
