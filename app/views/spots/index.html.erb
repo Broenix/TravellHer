@@ -3,21 +3,21 @@
 
 <div class="container_spot">
   <% @spots.each do |spot| %>
-  <%= link_to spot_path(spot) do %>
-    <div class="card mb-3" style="max-width: 540px;">
+    <div class="card mb-3" style="max-width: 450px;">
+      <%= link_to spot_path(spot) do %>
           <div class="row g-0">
             <div class="col-md-4">
-              <%= image_tag spot.photo, width:180, height: 180 %>
+              <%= image_tag spot.photo, width:120, height: 120 %>
             </div>
-              <div class="col-md-8">
+              <div class="col-md-8 ">
                     <div class="info_spot_card">
-                        <h1> <%= spot.name.capitalize %></h1>
-                        <p><%= spot.location%></p>
-                        <h5> <%= spot.rating %></h5>
+                        <p> <%= spot.name.capitalize %></p>
+                        <p> <%= spot.location%></p>
+                        <p> <%= spot.rating  %>*****</p>
                     </div>
               </div>
           </div>
+      <% end %>
     </div>
-    <% end %>
   <% end %>
 </div>
