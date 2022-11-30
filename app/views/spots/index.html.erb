@@ -1,8 +1,23 @@
 <p>list of kind of spot</p>
 
-<% @spots.each do |spot| %>
-    <h3> <%= spot.name %></h3>
-    <h3> <%= spot.photo.key %></h3>
 
-<%= link_to "lien vers le spot", spot_path(spot) %>
-<% end %>
+<div class="container_spot">
+  <% @spots.each do |spot| %>
+  <%= link_to spot_path(spot) do %>
+    <div class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <%= image_tag spot.photo, width:180, height: 180 %>
+            </div>
+              <div class="col-md-8">
+                    <div class="info_spot_card">
+                        <h1> <%= spot.name.capitalize %></h1>
+                        <p><%= spot.location%></p>
+                        <h5> <%= spot.rating %></h5>
+                    </div>
+              </div>
+          </div>
+    </div>
+    <% end %>
+  <% end %>
+</div>

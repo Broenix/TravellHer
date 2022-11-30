@@ -1,15 +1,8 @@
 <p>bonjour voici le spot de ouf</p>
 
+<p> <%= @spot.name %> </p>
+<div><h3> <%= image_tag @spot.photo, width:300, height: 300 %></div>
+
 <% @events.each do |event| %>
 <h3> <%= link_to event.name, event_path(event) %> </h3>
 <% end %>
-
-
-<%= simple_form_for @events do |f| %>
-        <%= f.input :photo, as: :file, label: 'Image', class:'label'%>
-        <%= f.input :name, label: 'Nom', class:'label' %>
-        <%= f.input :description, label: "Description", class:'label' %>
-          <%= f.input :start_date, html5: true, label: "Date of the event" %>
-          <%= f.submit "Submit", class: 'btn btn-essential' %>
-<% end %>
-
