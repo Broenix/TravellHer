@@ -1,5 +1,14 @@
 <p>list of kind of spot</p>
 
+<%= form_with url: category_spots_path, method: :get, class: "d-flex" do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Find a spot"
+  %>
+  <%= submit_tag "Search", class: "btn btn-primary" %>
+<% end %>
+
 <div class="container_spot">
   <% @spots.each do |spot| %>
     <div class="card mb-3" style="max-width: 450px;">

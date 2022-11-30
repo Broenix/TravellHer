@@ -3,12 +3,19 @@ class SpotsController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :index ]
   skip_before_action :authenticate_user!, only: [ :show ]
 
-
   def index
     @category = Category.find(params[:category_id])
-    @spots = Spot.where(category: @category)
-  end
 
+    if params[:query].present?
+      sql_query = <<~SQL
+        spots.name ILIKE :query
+        OR spots.location ILIKE :query
+      SQL
+      @spots = Spot.where(category: @category).where(sql_query, query: "%#{params[:query]}%")
+    else
+      @spots = Spot.where(category: @category)
+    end
+  end
 
   def show
     @spot = Spot.find(params[:id])
