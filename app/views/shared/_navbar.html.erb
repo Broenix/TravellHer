@@ -1,6 +1,10 @@
 <div class="wrapper-navbar" id="sticky">
     <i class="fa-solid fa-chevron-left"></i>
   <div class="profile-link-img">
-    <%= image_tag current_user.photo %>
+      <% if  current_user%>
+        <%= image_tag current_user.photo %>
+      <% else %>
+      <img src="<%= asset_path "logo1.jpg" %>" alt="">
+      <% end %>
   </div>
 </div>
