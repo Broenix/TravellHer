@@ -4,12 +4,4 @@
 <h3> <%= link_to event.name, event_path(event) %> </h3>
 <% end %>
 
-
-<%= simple_form_for @events do |f| %>
-        <%= f.input :photo, as: :file, label: 'Image', class:'label'%>
-        <%= f.input :name, label: 'Nom', class:'label' %>
-        <%= f.input :description, label: "Description", class:'label' %>
-          <%= f.input :start_date, html5: true, label: "Date of the event" %>
-          <%= f.submit "Submit", class: 'btn btn-essential' %>
-<% end %>
-
+<%= link_to "create an event",  new_spot_event_path(@spot) %>
