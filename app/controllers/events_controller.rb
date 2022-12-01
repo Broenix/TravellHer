@@ -20,7 +20,7 @@ class EventsController < ApplicationController
       # @event.user_id = current_user.id
       @spot = Spot.find(params[:spot_id])
       @event.spot = @spot
-      
+
       if @event.save
         redirect_to events_path
       else
