@@ -1,9 +1,19 @@
-// Import Google fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
+@font-face {
+  font-family: "Metropolis";
+  font-display: swap;
+  src: url('Metropolis.woff2') format('woff2'),
+      url('Metropolis.woff') format('woff');
+}
 
-// Define fonts for body and headers
-$body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Nunito", "Helvetica", "sans-serif";
+$my-font: "Metropolis";
+
+@font-face {
+  font-family: "MetropolisBold";
+  font-display: swap;
+  src: url('MetropolisBold.woff') format('woff');
+}
+
+$font-bold: "MetropolisBold";
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {

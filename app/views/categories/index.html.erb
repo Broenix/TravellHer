@@ -1,15 +1,31 @@
-<H1>Category index</H1>
+<div class="wrapper-category-index">
 
-<div class="container_spot">
-  <% @categories.each do |category| %>
-      <div class="card mb-3">
-    <%= link_to category_spots_path(category) do %>
-        <div>
-          <h3> <%= category.name %></h3>
-          <h3> <%= image_tag category.photo, width:300, height: 300 %>
-        </div>
-    <% end %>
+  <div class="welcome-message-container">
+    <h2>Hello <%=current_user.name%> !</h2>
+  </div>
+
+  <div class="event-near-you-container">
+    <h3>🎉 There are <%= @events.count %> events near you 🎉</h3>
+    <div class="link-to-event-container">
+      <%= link_to "See the events", events_path, class: "button-essential" %>
     </div>
-  <% end %>
+  </div>
 
+</div>
+
+<div class= "wrapper-category-container">
+  <div>
+    <h2>Choose a category</h2>
+  </div>
+
+  <div class= "container_category">
+    <% @categories.each do |category| %>
+      <div class= "category-card">
+        <%= link_to category_spots_path(category) do %>
+          <%= cl_image_tag category.photo.key, width:300, height: 300 %>
+          <p> <%= category.name %> </p>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
 </div>
