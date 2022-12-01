@@ -7,29 +7,29 @@ Category.destroy_all
 
 #Category
 
-file = File.open(Rails.root.join("db/seed/image/category/restaurant.jpg"))
+file = File.open(Rails.root.join("db/seed/image/category/restaurant.png"))
 restaurant = Category.create!(name: "Restaurants")
-restaurant.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
+restaurant.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
-file = File.open(Rails.root.join("db/seed/image/category/bar.jpg"))
+file = File.open(Rails.root.join("db/seed/image/category/wine.png"))
 bar = Category.create!(name: "Bars")
-bar.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
+bar.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
-file = File.open(Rails.root.join("db/seed/image/category/hostel.jpg"))
+file = File.open(Rails.root.join("db/seed/image/category/bunk-bed.png"))
 hostel = Category.create!(name: "Hostels")
-hostel.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
+hostel.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
-file = File.open(Rails.root.join("db/seed/image/category/volunteering.jpg"))
+file = File.open(Rails.root.join("db/seed/image/category/handshake.png"))
 volunteering = Category.create!(name: "Volunteering")
-volunteering.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
+volunteering.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
-file = File.open(Rails.root.join("db/seed/image/category/tour.jpg"))
+file = File.open(Rails.root.join("db/seed/image/category/sign-post.png"))
 tour = Category.create!(name: "Tours")
-tour.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
+tour.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
-file = File.open(Rails.root.join("db/seed/image/category/club.jpg"))
+file = File.open(Rails.root.join("db/seed/image/category/party-popper.png"))
 club = Category.create!(name: "Clubs")
-club.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
+club.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
 
 #User
