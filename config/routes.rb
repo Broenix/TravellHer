@@ -11,5 +11,8 @@ Rails.application.routes.draw do
   resources :spots, only: [:show] do
     resources :events, only: [:create, :new]
   end
-  resources :events, only: [:show, :index]
+  resources :events, only: [:show, :index] do
+    resources :bookmarks, only: [:create]
+  end
+  resources :bookmarks, only: [:index]
 end
