@@ -9,23 +9,24 @@
   <%= submit_tag "Search", class: "btn btn-primary" %>
 <% end %>
 
-<div class="container_spot">
-  <% @spots.each do |spot| %>
-    <div class="card mb-3" style="max-width: 450px;">
-      <%= link_to spot_path(spot) do %>
-          <div class="row g-0">
-            <div class="col-md-4">
-              <%= image_tag spot.photo, width:120, height: 120 %>
+<div class="card-container">
+  <% @spots.sort_by{|r| r.try(:rating)}.reverse.each do |spot| %>
+      <%= link_to spot_path(spot), class:"link-card-spot" do %>
+        <div class="card-spot">
+            <%= image_tag spot.photo, class:"card-image" %>
+            <div class="info-spot-card">
+              <h2> <%= spot.name.capitalize %></h2>
+              <p> 📍<%=  spot.location%></p>
+                <div class="spot-rating">
+                <%=  spot.rating.to_i.times do  %>
+                  <i class="fa-solid fa-star"></i>
+                  <% end %>
+                <p> <%= spot.rating.to_i %>/5 <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i></p>
+
+                </div>
             </div>
-              <div class="col-md-8 ">
-                    <div class="info_spot_card">
-                        <p> <%= spot.name.capitalize %></p>
-                        <p> <%= spot.location%></p>
-                        <p> <%= spot.rating  %>*****</p>
-                    </div>
-              </div>
-          </div>
+        </div>
+
       <% end %>
-    </div>
   <% end %>
 </div>
