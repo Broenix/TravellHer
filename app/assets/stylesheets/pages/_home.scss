@@ -1,17 +1,17 @@
 // Specific CSS for your home-page
-body {
-  font-family: $font-bold;
-}
+.homepage{
+  .picture {
+    background-image: asset-url("background_image.jpeg");
+    height: 50vh;
+    background-size: cover;
+    background-position: bottom;
+  }
 
-h4 {
-  font-family: $font-bold;
-}
+  .infos_pres{
+    text-align: center;
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 
-.picture {
-  background-image: asset-url("background_image.jpeg");
-  height: 312px;
-}
-.homepage p {
-  font-family: $my-font;
-  font-weight: 400;
+  }
 }
