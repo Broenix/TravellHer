@@ -1,0 +1,21 @@
+.category-card {
+  background-color: #D9D9D9;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    height: 50px;
+    width: 50px;
+  }
+
+  p {
+    color: black;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
