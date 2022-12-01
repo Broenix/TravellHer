@@ -5,6 +5,24 @@ $my-font-family: 'Prompt', sans-serif;
 
 body, input, textarea {
   font-weight: 200 !important;
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
+  }
 }
 label {
   font-weight: 500 !important;
