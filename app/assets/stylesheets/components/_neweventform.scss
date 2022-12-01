@@ -3,11 +3,13 @@
 
   .title{
     text-align: center;
-    margin-bottom: 30px;
+    font-size: 20px;
+    margin-bottom: 25px;
   }
 
-  .btn-essential{
-    align-items: center;
+  .btn-new{
+    display: flex;
+    justify-content: center;
   }
   .btn-new {
     display: flex;
@@ -19,15 +21,17 @@
   border: solid $blue;
   background-color: white;
   border-radius: 18px;
-  margin-bottom: 20px;
-
+  margin-bottom: 25px;
+  height: 50px;
 }
 
 #event_event_date{
   border: solid $blue;
   background-color: white;
   border-radius: 18px;
-  margin-bottom: 20px;
+  margin: 0 !important;
+  margin-bottom: 25px;
+  height: 50px;
 
 }
 
@@ -35,8 +39,8 @@
   border: solid $blue;
   background-color: white;
   border-radius: 18px;
-  margin-bottom: 20px;
-
+  margin-bottom: 25px;
+  height: 50px;
 }
 
 #event_description{
@@ -44,6 +48,6 @@
   background-color: white;
   border-radius: 18px;
   height: 110px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
 }
