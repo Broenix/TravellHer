@@ -2,16 +2,22 @@
 .homepage{
   .picture {
     background-image: asset-url("background_image.jpeg");
-    height: 50vh;
+    height: 69vh;
     background-size: cover;
-    background-position: bottom;
-  }
+    }
 
   .infos_pres{
     text-align: center;
     background-color: white;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: absolute;
+    bottom: 0;
+    height: 50vh;
   }
+
+  p{
+    padding: 10px;
+  }
+
 }
