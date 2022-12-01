@@ -1,1 +1,17 @@
 // Specific CSS for your home-page
+body {
+  font-family: $font-bold;
+}
+
+h4 {
+  font-family: $font-bold;
+}
+
+.picture {
+  background-image: asset-url("background_image.jpeg");
+  height: 312px;
+}
+.homepage p {
+  font-family: $my-font;
+  font-weight: 400;
+}
