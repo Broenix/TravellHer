@@ -1,5 +1,6 @@
 <div class="eventform">
-  <h4>Create a event</h4>
+  <div class="title"><h4>Create a event</h4>
+  </div>
   <%= simple_form_for [ @spot, @event]  do |f| %>
     <%= f.input :photo, as: :file, label: 'Image', class:'label'%>
     <%= f.input :event_date, html5: true, label: "Event date" %>
