@@ -1,26 +1,11 @@
-@font-face {
-  font-family: "Metropolis";
-  font-display: swap;
-  src: url('Metropolis.woff2') format('woff2'),
-      url('Metropolis.woff') format('woff');
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,500;1,200&display=swap');
+
+$my-font-family: 'Prompt', sans-serif;
+
+body, input, textarea {
+  font-weight: 200 !important;
 }
-
-$my-font: "Metropolis";
-
-@font-face {
-  font-family: "MetropolisBold";
-  font-display: swap;
-  src: url('MetropolisBold.woff') format('woff');
+label {
+  font-weight: 500 !important;
 }
-
-$font-bold: "MetropolisBold";
-
-// To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";

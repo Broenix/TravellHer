@@ -1,5 +1,5 @@
 <div class="eventform">
-  <div class="title"><h4>Create a event</h4>
+  <div class="title"><h1>Create a event</h1>
   </div>
   <%= simple_form_for [ @spot, @event]  do |f| %>
     <%= f.input :photo, as: :file, label: 'Choose a picture', class:'label'%>
@@ -10,6 +10,8 @@
     placeholder: 'Your event spot', class:'label' %>
     <%= f.input :description, label: "Event description",
     placeholder: 'Your event description', class:'label' %>
-    <%= f.submit "Submit", class: 'btn btn-essential' %>
+    <div class="btn-new">
+      <%= f.submit "Submit", class: 'btn button-essential' %>
+    </div>
   <% end %>
 </div>
