@@ -2,10 +2,14 @@
   <div class="title"><h4>Create a event</h4>
   </div>
   <%= simple_form_for [ @spot, @event]  do |f| %>
-    <%= f.input :photo, as: :file, label: 'Image', class:'label'%>
+    <%= f.input :photo, as: :file, label: 'Choose a picture', class:'label'%>
+    <%= f.input :name, label: 'Event name',
+    placeholder: 'Your event name', class:'label'%>
     <%= f.input :event_date, html5: true, label: "Event date" %>
-    <%= f.input :name, label: 'Event name', class:'label' %>
-    <%= f.input :description, label: "Event description", class:'label' %>
+    <%= f.input :name, label: 'Event spot',
+    placeholder: 'Your event spot', class:'label' %>
+    <%= f.input :description, label: "Event description",
+    placeholder: 'Your event description', class:'label' %>
     <%= f.submit "Submit", class: 'btn btn-essential' %>
   <% end %>
 </div>
