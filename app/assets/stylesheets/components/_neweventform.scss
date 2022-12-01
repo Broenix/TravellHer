@@ -3,11 +3,7 @@
 
   .title{
     text-align: center;
-    font-size: 30px;
-
-    h4{
-      font-weight: 30;
-    }
+    margin-bottom: 30px;
   }
 
   .btn-essential{
@@ -23,18 +19,24 @@
   border: solid $blue;
   background-color: white;
   border-radius: 18px;
+  margin-bottom: 20px;
+
 }
 
 #event_event_date{
   border: solid $blue;
   background-color: white;
   border-radius: 18px;
+  margin-bottom: 20px;
+
 }
 
 #event_photo{
   border: solid $blue;
   background-color: white;
   border-radius: 18px;
+  margin-bottom: 20px;
+
 }
 
 #event_description{
@@ -42,4 +44,6 @@
   background-color: white;
   border-radius: 18px;
   height: 110px;
+  margin-bottom: 20px;
+
 }
