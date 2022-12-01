@@ -1,9 +1,14 @@
-<p><%= @event.name %></p>
 
+<div>
+<p> <%  @event.photo %> </p>
+  <div>
+    <div>
+  <p><%= @event.name %></p>
+    </div>
+  <p><%= @event.description %></p>
+  </div>
+  <p><%= link_to "Join this event", bookmarks_path, class: "button-essential" %></p>
+</div>
 
-<p><%= @event.description %></p>
-
-
-<p><%= link_to "Join this event", bookmarks_path %></p>
 
 <%= link_to "Back", spot_path %>
