@@ -6,7 +6,7 @@
 .card-spot {
   overflow: hidden;
   height: 120px;
-  width: 374px;
+  width: 340px;
   background: white;
   display: flex;
   align-items: center;
@@ -47,11 +47,12 @@
 
 .spot-rating {
   text-align: right;
+  padding-right: 5px;
 }
 
 .link-card-spot {
   height: 120px;
-  width: 414px;
+  width: 350px;
   text-decoration: none;
 
 }
