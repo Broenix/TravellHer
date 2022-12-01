@@ -1,1 +1,17 @@
 // Specific CSS for your home-page
+.homepage{
+  .picture {
+    background-image: asset-url("background_image.jpeg");
+    height: 50vh;
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .infos_pres{
+    text-align: center;
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+  }
+}
