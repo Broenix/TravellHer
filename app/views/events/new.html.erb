@@ -1,9 +1,10 @@
-<p>new event page</p>
-
-<%= simple_form_for [ @spot, @event]  do |f| %>
-        <%= f.input :name, label: 'Nom', class:'label' %>
-        <%= f.input :description, label: "Description", class:'label' %>
-        <%= f.input :photo, as: :file, label: 'Image', class:'label'%>
-          <%= f.input :event_date, html5: true, label: "Event date" %>
-        <%= f.submit "Create an event", class: 'btn btn-essential' %>
-      <% end %>
+<div class="eventform">
+  <h4>Create a event</h4>
+  <%= simple_form_for [ @spot, @event]  do |f| %>
+    <%= f.input :photo, as: :file, label: 'Image', class:'label'%>
+    <%= f.input :event_date, html5: true, label: "Event date" %>
+    <%= f.input :name, label: 'Event name', class:'label' %>
+    <%= f.input :description, label: "Event description", class:'label' %>
+    <%= f.submit "Submit", class: 'btn btn-essential' %>
+  <% end %>
+</div>
