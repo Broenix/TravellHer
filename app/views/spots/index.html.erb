@@ -1,5 +1,4 @@
-<p>list of kind of spot</p>
-
+<div class="card-container">
 <%= form_with url: category_spots_path, method: :get, class: "d-flex" do %>
   <%= text_field_tag :query,
     params[:query],
@@ -9,7 +8,7 @@
   <%= submit_tag "Search", class: "btn btn-primary" %>
 <% end %>
 
-<div class="card-container">
+
   <% @spots.sort_by{|r| r.try(:rating)}.reverse.each do |spot| %>
       <%= link_to spot_path(spot), class:"link-card-spot" do %>
         <div class="card-spot">
@@ -21,8 +20,6 @@
                 <%=  spot.rating.to_i.times do  %>
                   <i class="fa-solid fa-star"></i>
                   <% end %>
-                <p> <%= spot.rating.to_i %>/5 <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i></p>
-
                 </div>
             </div>
         </div>
@@ -30,3 +27,5 @@
       <% end %>
   <% end %>
 </div>
+
+<%# fa-regular fa-star" %>
