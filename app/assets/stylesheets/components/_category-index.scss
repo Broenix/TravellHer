@@ -1,0 +1,43 @@
+.wrapper-category-index {
+  background-color: white;
+
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .welcome-message-container {
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+  .event-near-you-container {
+  text-align: center;
+  margin: 20px 20px;
+
+   .link-to-event-container {
+    padding: 10px;
+   }
+  }
+}
+
+.wrapper-category-container {
+  background-color: white;
+
+  .container_category {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+  h2 {
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+
+  }
+}

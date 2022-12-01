@@ -4,32 +4,33 @@ Spot.destroy_all
 User.destroy_all
 Event.destroy_all
 Category.destroy_all
+Bookmark.destroy_all
 
 #Category
 
-file = File.open(Rails.root.join("db/seed/image/category/restaurant.jpg"))
+file = File.open(Rails.root.join("db/seed/image/category/restaurant.png"))
 restaurant = Category.create!(name: "Restaurants")
-restaurant.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
+restaurant.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
-file = File.open(Rails.root.join("db/seed/image/category/bar.jpg"))
+file = File.open(Rails.root.join("db/seed/image/category/wine.png"))
 bar = Category.create!(name: "Bars")
-bar.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
+bar.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
-file = File.open(Rails.root.join("db/seed/image/category/hostel.jpg"))
+file = File.open(Rails.root.join("db/seed/image/category/bunk-bed.png"))
 hostel = Category.create!(name: "Hostels")
-hostel.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
+hostel.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
-file = File.open(Rails.root.join("db/seed/image/category/volunteering.jpg"))
+file = File.open(Rails.root.join("db/seed/image/category/handshake.png"))
 volunteering = Category.create!(name: "Volunteering")
-volunteering.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
+volunteering.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
-file = File.open(Rails.root.join("db/seed/image/category/tour.jpg"))
+file = File.open(Rails.root.join("db/seed/image/category/sign-post.png"))
 tour = Category.create!(name: "Tours")
-tour.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
+tour.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
-file = File.open(Rails.root.join("db/seed/image/category/club.jpg"))
+file = File.open(Rails.root.join("db/seed/image/category/party-popper.png"))
 club = Category.create!(name: "Clubs")
-club.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
+club.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
 
 #User
@@ -89,5 +90,11 @@ ongle.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 culey_event = Event.create!(name: "Eat at Culey", description: "I'd love to try to eat in town and this restaurant is getting my attention. Would be nice to have someone to join me in the city.", event_date: "2023-01-12", spot: culey)
 gin_event = Event.create!(name:"A Gin at the Gin bar", description: "I love gins and the Gin bar seems to be specialized in making some, do you want to join me ?", event_date:"2023-01-15", spot: gin)
 gin_event2 = Event.create!(name:"Another Gin at the Gin bar", description: "I really love gins and the Gin bar seems to be specialized in making some, do you want to join me ?", event_date:"2023-01-17", spot: gin)
+
+#Bookmarks
+
+bookmark1 = Bookmark.create!(user: chloe, event: culey_event)
+bookmark2 = Bookmark.create!(user: thea, event: gin_event)
+bookmark3 = Bookmark.create!(user: thea, event: gin_event2)
 
 puts "... Super-mega-database-de-beau-gosse.final.final2.TRUEFINAL created"
