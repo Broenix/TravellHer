@@ -1,0 +1,14 @@
+<div class="wrapper-navbar" id="sticky">
+  <div>
+ <%= link_to "/",  class: "navbar-brand" do %>
+        <i class="fa-solid fa-house-window"></i>  
+  <% end %>
+  </div>
+  <div class="profile-link-img">
+      <% if  current_user%>
+        <%= image_tag current_user.photo %>
+      <% else %>
+      <img src="<%= asset_path "logo1.jpg" %>" alt="">
+      <% end %>
+  </div>
+</div>

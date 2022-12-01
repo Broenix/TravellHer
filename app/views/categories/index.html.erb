@@ -1,0 +1,15 @@
+<H1>Category index</H1>
+
+<div class="container_spot">
+  <% @categories.each do |category| %>
+      <div class="card mb-3">
+    <%= link_to category_spots_path(category) do %>
+        <div>
+          <h3> <%= category.name %></h3>
+          <h3> <%= image_tag category.photo, width:300, height: 300 %>
+        </div>
+    <% end %>
+    </div>
+  <% end %>
+
+</div>

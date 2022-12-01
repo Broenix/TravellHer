@@ -1,0 +1,8 @@
+<p>bonjour voici le spot de ouf</p>
+
+<% @events.each do |event| %>
+<h3> <%= link_to event.name, event_path(event) %> </h3>
+<% end %>
+
+<%= link_to "create an event",  new_spot_event_path(@spot) %>
+

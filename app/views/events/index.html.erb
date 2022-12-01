@@ -1,0 +1,13 @@
+
+<p>Index events created</p>
+
+<p>let's implement the </p>
+
+
+<h1>Events</h1>
+<br>
+<div class="container">
+ <% @events.each do |event| %>
+<h2><%= link_to event.name, event_path(event) %></h2>
+  <% end %>
+</div>
