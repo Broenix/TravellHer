@@ -1,0 +1,5 @@
+<h2>Futures events</h2>
+<% @mybookmarks.each do |bookmark| %>
+<h3><%= link_to bookmark.event.name, event_path(bookmark.event) %></h3>
+<%# <h3><% image_tag bookmark.event.photo, width:300, height: 300</h3>  %>
+<% end %>
