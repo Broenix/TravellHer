@@ -20,15 +20,12 @@
 
   <div class= "container_category">
     <% @categories.each do |category| %>
-        <div class= "category-card">
-            <%= link_to category_spots_path(category) do %>
-          <div>
-            <%= cl_image_tag category.photo.key, width:300, height: 300 %>
-            <p> <%= category.name %></p>
-          </div>
-      <% end %>
+      <div class= "category-card">
+        <%= link_to category_spots_path(category) do %>
+          <%= cl_image_tag category.photo.key, width:300, height: 300 %>
+          <p> <%= category.name %> </p>
+        <% end %>
       </div>
     <% end %>
-
   </div>
 </div>

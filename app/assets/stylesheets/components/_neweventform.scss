@@ -1,0 +1,37 @@
+.eventform{
+  padding: 20px;
+
+  .title{
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .btn-essential{
+    align-items: center;
+  }
+}
+
+#event_name{
+  border: solid $blue;
+  background-color: white;
+  border-radius: 18px;
+}
+
+#event_event_date{
+  border: solid $blue;
+  background-color: white;
+  border-radius: 18px;
+}
+
+#event_photo{
+  border: solid $blue;
+  background-color: white;
+  border-radius: 18px;
+}
+
+#event_description{
+  border: solid $blue;
+  background-color: white;
+  border-radius: 18px;
+  height: 110px;
+}
