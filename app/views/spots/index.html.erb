@@ -1,0 +1,31 @@
+<p>list of kind of spot</p>
+
+<%= form_with url: category_spots_path, method: :get, class: "d-flex" do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Find a spot"
+  %>
+  <%= submit_tag "Search", class: "btn btn-primary" %>
+<% end %>
+
+<div class="container_spot">
+  <% @spots.each do |spot| %>
+    <div class="card mb-3" style="max-width: 450px;">
+      <%= link_to spot_path(spot) do %>
+          <div class="row g-0">
+            <div class="col-md-4">
+              <%= image_tag spot.photo, width:120, height: 120 %>
+            </div>
+              <div class="col-md-8 ">
+                    <div class="info_spot_card">
+                        <p> <%= spot.name.capitalize %></p>
+                        <p> <%= spot.location%></p>
+                        <p> <%= spot.rating  %>*****</p>
+                    </div>
+              </div>
+          </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
