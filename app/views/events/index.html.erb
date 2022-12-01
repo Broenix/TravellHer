@@ -1,14 +1,11 @@
-
 <p>Index events created</p>
-
-<p>let's implement the </p>
-
 
 <h1>Events</h1>
 <br>
 <div class="container">
- <% @events.each do |event| %>
- <h2> <% event.photo %></h2>
-<h2><%= link_to event.name, event_path(event) %></h2>
-  <% end %>
+<% @events.each do |event| %>
+  <h2><%= image_tag event.spot.photo,  width:300, height: 300 %></h2>
+  <h2> <% event.photo %></h2>
+  <h2><%= link_to event.name, event_path(event) %></h2>
+<% end %>
 </div>
