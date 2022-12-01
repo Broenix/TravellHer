@@ -8,6 +8,7 @@
 <br>
 <div class="container">
  <% @events.each do |event| %>
+ <h2> <% event.photo %></h2>
 <h2><%= link_to event.name, event_path(event) %></h2>
   <% end %>
 </div>
