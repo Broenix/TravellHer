@@ -12,7 +12,6 @@ class EventsController < ApplicationController
 
   def new
     @event = Event.new # Needed to instantiate the form_with
-    @spot = Spot.find(params[:spot_id])
   end
 
   def create
