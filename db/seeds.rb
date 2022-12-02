@@ -7,28 +7,27 @@ Category.destroy_all
 Bookmark.destroy_all
 
 #Category
-
-file = File.open(Rails.root.join("db/seed/image/category/restaurant.png"))
+file = File.open(Rails.root.join("app/assets/images/category/restaurant.png"))
 restaurant = Category.create!(name: "Restaurants")
 restaurant.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
-file = File.open(Rails.root.join("db/seed/image/category/wine.png"))
+file = File.open(Rails.root.join("app/assets/images/category/wine.png"))
 bar = Category.create!(name: "Bars")
 bar.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
-file = File.open(Rails.root.join("db/seed/image/category/bunk-bed.png"))
+file = File.open(Rails.root.join("app/assets/images/category/bunk-bed.png"))
 hostel = Category.create!(name: "Hostels")
 hostel.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
-file = File.open(Rails.root.join("db/seed/image/category/handshake.png"))
+file = File.open(Rails.root.join("app/assets/images/category/handshake.png"))
 volunteering = Category.create!(name: "Volunteering")
 volunteering.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
-file = File.open(Rails.root.join("db/seed/image/category/sign-post.png"))
+file = File.open(Rails.root.join("app/assets/images/category/sign-post.png"))
 tour = Category.create!(name: "Tours")
 tour.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
-file = File.open(Rails.root.join("db/seed/image/category/party-popper.png"))
+file = File.open(Rails.root.join("app/assets/images/category/party-popper.png"))
 club = Category.create!(name: "Clubs")
 club.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
