@@ -9,16 +9,16 @@
   </div>
 
   <div class="event-near-you-container">
-    <h3>🎉 There are <%= @events.count %> events near you 🎉</h3>
-    <div class="link-to-event-container">
-      <%= link_to "See the events", events_path, class: "button-essential" %>
-    </div>
+      <h3>🎉 There are <%= @events.count %> events near you 🎉</h3>
+      <div class="link-to-event-container">
+        <%= link_to "See the events", events_path(@events), class: "button-essential" %>
+      </div>
   </div>
 </div>
 
 <div class= "wrapper-category-container">
   <div>
-    <h2>Choose a category</h2>
+    <h3>Choose a category</h3>
   </div>
 
   <div class= "container_category">

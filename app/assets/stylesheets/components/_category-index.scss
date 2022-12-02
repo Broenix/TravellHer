@@ -29,10 +29,13 @@
       font-size: 17px;
       margin-right: 5px;
     }
+
   }
+
 }
 
 .wrapper-category-container {
+
 
   .container_category {
     display: grid;
@@ -40,9 +43,12 @@
     grid-gap: 10px;
   }
 
-  h2 {
+  h3 {
     margin-left: 25px;
-    font-size: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
+}
+
+.category-index-container {
+  margin-top: 75px;
 }
