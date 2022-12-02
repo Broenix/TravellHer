@@ -1,14 +1,17 @@
-
-<div >
-<p> <%= image_tag @event.spot.photo, width:300, height: 300 %> </p>
-  <div>
-    <div>
-  <p><%= @event.name %></p>
+<div class="homepage">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-6">
+      <div>
+      <p> <%= image_tag @event.spot.photo, width:470, height: 470 %> </p>
+      </div>
+      <div class="infos_pres p-4">
+        <p> <%= @event.event_date %></p>
+        <%# <p><%= image_tag @event.creator.photo %></p> %>
+        <p><strong><%= @event.name %></strong></p>
+        <p><%= @event.description %></p>
+        <p><%= link_to "Join this event", bookmarks_path, class: "button-essential" %></p>
+        <%= link_to "Back", spot_path %>
+      </div>
     </div>
-  <p><%= @event.description %></p>
   </div>
-  <p><%= link_to "Join this event", bookmarks_path, class: "button-essential" %></p>
 </div>
-
-
-<%= link_to "Back", spot_path %>
