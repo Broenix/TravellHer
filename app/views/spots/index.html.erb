@@ -8,13 +8,13 @@
   <%= submit_tag "Search", class: "btn btn-primary" %>
 <% end %>
 
-
+<br>
   <% @spots.sort_by{|r| r.try(:rating)}.reverse.each do |spot| %>
       <%= link_to spot_path(spot), class:"link-card-spot" do %>
         <div class="card-spot">
             <%= image_tag spot.photo, class:"card-image" %>
             <div class="info-spot-card">
-              <h2> <%= spot.name.capitalize %></h2>
+              <h3> <%= spot.name.capitalize %></h3>
               <p> 📍<%=  spot.location%></p>
                 <div class="spot-rating">
                 <%=  spot.rating.to_i.times do  %>
@@ -28,4 +28,4 @@
   <% end %>
 </div>
 
-<%# fa-regular fa-star" %>
+<%# fa-regular fa-star"  %>
