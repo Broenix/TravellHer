@@ -1,11 +1,22 @@
-<p>Index events created</p>
+<div class="container-event">
 
-<h1>Events</h1>
+
 <br>
-<div class="container">
-<% @events.each do |event| %>
-  <h2><%= image_tag event.spot.photo,  width:300, height: 300 %></h2>
-  <h2> <% event.photo %></h2>
-  <h2><%= link_to event.name, event_path(event) %></h2>
-<% end %>
+  <% @events.each do |event| %>
+      <%= link_to event_path(event), class:"link-card-event" do %>
+        <div class="card-event">
+          <%= image_tag event.spot.photo, class:"card-image" %>
+          <div class="info-event-card">
+              <h3> <%=  event.name.capitalize %></h3>
+              <p> 📍<%= event.spot.name %></p>
+                <div class="event-date-card">
+                <%= event.event_date %>
+                </div>
+                  <div class="event-profil-img">
+                  <p>img</p>
+                  </div>
+          </div>
+        </div>
+    <% end %>
+  <% end %>
 </div>
