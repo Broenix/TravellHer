@@ -8,6 +8,7 @@
   }
   .event-near-you-container {
     text-align: center;
+    margin: 50px 50px;
 
    .link-to-event-container {
     margin: 30px 30px;
@@ -40,7 +41,7 @@
   .container_category {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 20px;
   }
 
   h3 {
@@ -49,6 +50,6 @@
   }
 }
 
-.category-index-container {
-  margin-top: 75px;
+.category-index-conainer {
+  margin-top: 85px;
 }
