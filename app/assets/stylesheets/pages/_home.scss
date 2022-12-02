@@ -1,7 +1,7 @@
 // Specific CSS for your home-page
 .homepage{
   .picture {
-    background-image: asset-url("background_image.jpeg");
+    background-image: asset-url("homepage.jpg");
     height: 69vh;
     background-size: cover;
     }
@@ -9,11 +9,11 @@
   .infos_pres{
     text-align: center;
     background-color: white;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     position: absolute;
     bottom: 0;
-    height: 50vh;
+    height: 52vh;
   }
 
   p{
