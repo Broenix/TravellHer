@@ -1,10 +1,10 @@
-.card-container {
+.container-event {
   margin: 20px;
   margin-top: 75px;
 }
 
 
-.card-spot {
+.card-event {
   overflow: hidden;
   height: 120px;
   background: white;
@@ -26,7 +26,7 @@
 
 }
 
-.info-spot-card h3 {
+.info-event-card h3 {
   font-weight: bold;
   margin: 0;
   padding: 6px;
@@ -34,7 +34,7 @@
 
 }
 
-.info-spot-card p {
+.info-event-card p {
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
@@ -43,18 +43,21 @@
 
 }
 
-.spot-rating {
-  text-align: right;
-  padding-right: 5px;
-}
 
-.link-card-spot {
+.link-card-event {
   height: 120px;
   width: 350px;
   text-decoration: none;
 
 }
 
-.fa-solid {
-  color: rgb(255, 204, 0)
+.event-date-card {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.event-profil-img{
+  text-align: right;
+  padding-right: 5px;
+
 }
