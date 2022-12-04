@@ -3,7 +3,7 @@
   <div class="wrapper-category-index">
 
     <div class="welcome-message-container">
-      <h2>Hello <%=current_user.name%> !</h2>
+      <h2>Hello <%=current_user.name%>!</h2>
         <div class="current-location">
           <i class="fas fa-map-marker"></i>
           <h4>Lima</h4>
@@ -11,7 +11,7 @@
     </div>
 
     <div class="event-near-you-container">
-        <h3>🎉 There are <%= @events.count %> events near you 🎉</h3>
+        <h2>🎉 There are <%= @events.count %> events near you 🎉</h2>
         <div class="link-to-event-container">
           <%= link_to "See the events", events_path(@events), class: "button-essential" %>
         </div>
