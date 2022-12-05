@@ -5,6 +5,7 @@ User.destroy_all
 Event.destroy_all
 Category.destroy_all
 Bookmark.destroy_all
+Review.destroy_all
 
 #Category
 file = File.open(Rails.root.join("app/assets/images/category/restaurant.png"))
@@ -112,4 +113,16 @@ bookmark1 = Bookmark.create!(user: paola, event: bd)
 bookmark2 = Bookmark.create!(user: alexandra, event: christmas)
 bookmark3 = Bookmark.create!(user: thea, event: newyear)
 
-puts "... Super-mega-database-de-beau-gosse.final.final2.TRUEFINAL created"
+#Reviews
+
+review1 = Review.create!(comment:"Wow, I had a great time, this restaurant is just amazing. I recommend it 100%", rating:5, spot: mercado28, user:thea )
+review2 = Review.create!(comment:"This restaurant is a change from the usual, the Chinese influences made us travel. ", rating:4, spot: chifatiti, user:paola )
+review3 = Review.create!(comment:"The food is very good, but the hygiene of the place leaves something to be desired. ", rating:3, spot: cantarana, user:alexandra )
+review4 = Review.create!(comment:"I'm French, I missed the local cuisine, but it was just awful. I don't recommend it, don't go there. ", rating:2, spot: labom, user:thea )
+review5 = Review.create!(comment:"Am I in Peru or Italy? The pizzas are just crazy. If you're not afraid of peperonni and guanciale. This is the place to be. ", rating:5, spot: raul, user:paola )
+review6 = Review.create!(comment:"Very good family restaurant, affordable and especially veggie. ", rating:4, spot: greenfalafel, user:alexandra )
+review7 = Review.create!(comment:"Really better than McDonald's !!!", rating:5, spot: chacruna, user:thea )
+review8 = Review.create!(comment:"This typical foodhall represents perfectly the South American culture, I recommend it. ", rating:4, spot: sanblas, user:paola )
+review9 = Review.create!(comment:"Good value for money. ", rating:5, spot: gp, user:thea )
+
+puts "... Super-mega-database-de-beau-gosse.final.final2.TRUEFINAL .TRUTRUTRUTRUTRUEFINAL.ULTIMATEFINAL created"
