@@ -15,7 +15,7 @@
                 <h4>Event place</h4>
                   <p><%= @event.spot.location %></p>
             <div class="join-an-event">
-              <%= link_to "Join this event", bookmarks_path, class: "button-essential" %>
+              <%= link_to "Join the chat", event_chatroom_path(event_id: @event.id, id: @event.chatroom.id), class: "button-essential" %>
             </div>
         </div>
 </div>
