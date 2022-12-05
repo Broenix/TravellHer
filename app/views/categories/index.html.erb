@@ -11,7 +11,7 @@
     </div>
 
     <div class="event-near-you-container">
-        <h2>🎉 There are <%= @events.count %> events near you 🎉</h2>
+        <h3>🎉 There are <%= @events.count %> events near you 🎉</h3>
         <div class="link-to-event-container">
           <%= link_to "See the events", events_path(@events), class: "button-essential" %>
         </div>
@@ -20,14 +20,14 @@
 
   <div class= "wrapper-category-container">
     <div>
-      <h3>Choose a category</h3>
+      <h2>Choose a category</h2>
     </div>
 
     <div class= "container_category">
       <% @categories.each do |category| %>
         <div class= "category-card">
           <%= link_to category_spots_path(category) do %>
-            <%= cl_image_tag category.photo.key, width:300, height: 300 %>
+            <%= cl_image_tag category.photo.key, width:150, height: 150 %>
             <p class="category-name"> <%= category.name %> </p>
           <% end %>
         </div>

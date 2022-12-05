@@ -7,7 +7,6 @@
     font-size: 20px;
     margin-bottom: 40px;
     margin-top: 20px;
-    
   }
 
   .btn-new{
@@ -22,6 +21,46 @@
   label{
     margin-bottom: 10px;
   }
+}
+.event_photo .form-control {
+  border: none;
+}
+
+.form-control {
+  color: transparent;
+}
+.form-control::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.form-control::before {
+  font-family: "Font Awesome 6 free";
+  font-weight: 900;
+  content: "\f56d";
+  color: black;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  margin: auto;
+  background: white;
+  border: 2px solid $blue;
+  border-radius: 18px;
+  padding: 20px 20px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30pt;
+}
+.form-control:focus {
+  color: transparent;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  box-shadow: none
+}
+.form-control:active {
+  outline: 0;
+}
+.form-control:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }
 
 #event_name{
@@ -39,15 +78,6 @@
   margin: 0 !important;
   margin-bottom: 20px;
   height: 50px;
-
-}
-
-#event_photo{
-  border: solid $blue;
-  background-color: white;
-  border-radius: 18px;
-  margin-bottom: 20px;
-  height: 50px;
 }
 
 #event_description{
@@ -55,6 +85,5 @@
   background-color: white;
   border-radius: 18px;
   height: 110px;
-  margin-bottom: 20px;
-
+  margin-bottom: 30px;
 }
