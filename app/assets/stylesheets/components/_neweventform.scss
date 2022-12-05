@@ -7,7 +7,7 @@
     font-size: 20px;
     margin-bottom: 40px;
     margin-top: 20px;
-    
+
   }
 
   .btn-new{
@@ -55,6 +55,35 @@
   background-color: white;
   border-radius: 18px;
   height: 110px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
 
+.label {
+  color: transparent;
+}
+.label::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.label::before {
+  content: 'Download';
+  color: black;
+  display: inline-block;
+  background: white;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 50px 20px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.label:hover::before {
+  border-color: black;
+}
+.label:active {
+  outline: 0;
+}
+.label:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }
