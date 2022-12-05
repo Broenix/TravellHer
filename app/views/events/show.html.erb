@@ -14,13 +14,15 @@
           <%= image_tag current_user.photo %>
         </div>
                   <div class="line-5"></div>
+                <h4>Event place</h4>
+                  <p><%= @event.spot.location %></p>
                     <h4>Description</h4>
                       <p><%= @event.description %></p>
                       <div class="line-5"></div>
                     <h4>Event place</h4>
                       <p><%= @event.spot.location %></p>
-                <div class="join-an-event">
-                  <%= link_to "Join", bookmarks_path, class: "button-essential" %>
+                      <div class="join-an-event">
+              <%= link_to "Join the chat", event_chatroom_path(event_id: @event.id, id: @event.chatroom.id), class: "button-essential" %>
                 </div>
             </div>
 </div>
