@@ -122,5 +122,4 @@ review7 = Review.create!(comment:"Really better than McDonald's !!!", rating:5, 
 review8 = Review.create!(comment:"This typical foodhall represents perfectly the South American culture, I recommend it. ", rating:4, spot: sanblas, user:paola )
 review9 = Review.create!(comment:"Good value for money. ", rating:5, spot: gp, user:thea )
 
-
 puts "... Super-mega-database-de-beau-gosse.final.final2.TRUEFINAL .TRUTRUTRUTRUTRUEFINAL.ULTIMATEFINAL created"

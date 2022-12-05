@@ -9,3 +9,4 @@ class Spot < ApplicationRecord
   validates :rating, presence: true
   validates :description, presence: true
 end
+
