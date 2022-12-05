@@ -5,7 +5,6 @@ class SpotsController < ApplicationController
 
   def index
     @category = Category.find(params[:category_id])
-
     if params[:query].present?
       sql_query = <<~SQL
         spots.name ILIKE :query
@@ -20,6 +19,7 @@ class SpotsController < ApplicationController
   def show
     @spot = Spot.find(params[:id])
     @events = @spot.events
+    @reviews = @spot.reviews
   end
 
 

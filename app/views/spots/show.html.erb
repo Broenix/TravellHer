@@ -18,7 +18,9 @@
                 <%= @spot.description %>
                 <div class="line-5"></div>
               <h4>Popular review</h4>
-                <p>coucou toi</p>
+                <% @reviews.each do |review| %>
+                <%= review.comment %>
+                <% end %>
           <div class="join-an-spot">
             <%= link_to "Organize an event",  new_spot_event_path(@spot), class:"button-essential" %>
           </div>

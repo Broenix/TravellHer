@@ -21,6 +21,7 @@ class EventsController < ApplicationController
       @event.spot = @spot
 
       if @event.save
+        @chatroom = Chatroom.create(name: @event.name, event: @event)
         redirect_to events_path
       else
         render :new, status: :unprocessable_entity

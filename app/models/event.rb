@@ -3,6 +3,7 @@
   belongs_to :spot
   belongs_to :user
   has_many :bookmarks, dependent: :destroy
+  has_one :chatroom
 
   validates :name, presence: true
   validates :description, presence: true
