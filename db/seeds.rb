@@ -53,53 +53,61 @@ thea.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 #Spots
 
 file = File.open(Rails.root.join("db/seed/image/spots/chifatiti.png"))
-chifatiti = Spot.create!(name:"Chifa Titi" , location:"Javier Prado Este 1212, San Isidro", rating:4, category: restaurant)
+chifatiti = Spot.create!(name:"Chifa Titi" , location:"Javier Prado Este 1212, San Isidro", rating:4, category: restaurant, description: "Whenever you ask a Limeño for a favorite Chifa restaurant, most will direct you to this well-established restaurant that exemplifies the Chinese influence on Peruvian cuisine.")
 chifatiti.photo.attach(io: file, filename: "photo.png", content_type: "image/png")
 
 file = File.open(Rails.root.join("db/seed/image/spots/mercado28.jpeg"))
-mercado28 = Spot.create!(name:"Mercado 28" , location:"Vasco Núñez de Balboa 755, Miraflores", rating:5, category: restaurant)
+mercado28 = Spot.create!(name:"Mercado 28" , location:"Vasco Núñez de Balboa 755, Miraflores", rating:5, category: restaurant, description: "Mercado 28 is the first gastronomic market in Peru, where people not only go to eat, but they come to 'do the market', browse the stalls and get lost among new aromas and flavors.")
 mercado28.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/spots/cantarana.jpeg"))
-cantarana = Spot.create!(name:"Canta Rana" , location:"Genova 101, Barranco", rating:4, category: restaurant)
+cantarana = Spot.create!(name:"Canta Rana" , location:"Genova 101, Barranco", rating:4, category: restaurant, description: "The menu is long and varied, from rice to seafood, passing by the causa. This is the place to go to taste the famous Peruvian ceviche!")
 cantarana.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/spots/labom.jpeg"))
-labom = Spot.create!(name:"Creperia La Bo'M" , location:"Av. Mariscal La Mar 770, Miraflores", rating:5, category: restaurant)
+labom = Spot.create!(name:"Creperia La Bo'M" , location:"Av. Mariscal La Mar 770, Miraflores", rating:5, category: restaurant, description: "Located in the very authentic neighborhood of San Blas, this creperie held by French people has not finished surprising you with flavors inspired by the world cuisine.")
 labom.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/spots/pizzaraul.png"))
-raul = Spot.create!(name:"Pizza Raul" , location:"Genova 115, Barranco 15063", rating:3, category: restaurant)
+raul = Spot.create!(name:"Pizza Raul" , location:"Genova 115, Barranco 15063", rating:3, category: restaurant, description: "The best of the traditional pizzas at a very low price. Raul will welcome you in his restaurant with a soccer atmosphere.")
 raul.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/spots/greenfa.jpg"))
-greenfalafel = Spot.create!(name:"Green Falafel" , location:"C. Schell 452, Miraflores", rating:5, category: restaurant)
+greenfalafel = Spot.create!(name:"Green Falafel" , location:"C. Schell 452, Miraflores", rating:5, category: restaurant, description: "The best falafels in Peru are here! Prepared right before your eyes, they are crispy and super soft inside. The restaurant is located in the San Blas market and is run by a family.")
 greenfalafel.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/spots/chakruna.jpg"))
-chacruna = Spot.create!(name:"Chakruna" , location:"Ca. Gral. Borgoño Nº860, Barranco", rating:4, category: restaurant)
+chacruna = Spot.create!(name:"Chakruna" , location:"Ca. Gral. Borgoño Nº860, Barranco", rating:4, category: restaurant, description:"The best burgers in the capital are here! In a golden oven bun, with a wide variety of toppings, you won't be disappointed!")
 chacruna.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/spots/sanblas.png"))
-sanblas = Spot.create!(name:"Mercado San Blas" , location:"C. Amador Merino Reyna 589, San Isidro", rating:4, category: restaurant)
+sanblas = Spot.create!(name:"Mercado San Blas" , location:"C. Amador Merino Reyna 589, San Isidro", rating:4, category: restaurant, description:"The San Blas market is the best place to come for lunch. Many restaurants are present and you can taste a lot of different cuisines.")
 sanblas.photo.attach(io: file, filename: "photo.jpg", content_type: "image/png")
 
 file = File.open(Rails.root.join("db/seed/image/spots/greenp.jpg"))
-gp = Spot.create!(name:"Green Point Restaurants" , location:"Av. Simón Bolivar 1515, Pueblo Libre", rating:4, category: restaurant)
+gp = Spot.create!(name:"Green Point" , location:"Av. Simón Bolivar 1515, Pueblo Libre", rating:4, category: restaurant, description:"The best falafels in Peru are here! Prepared right before your eyes, they are crispy and super soft inside. The restaurant is located in the San Blas market and is run by a family.")
 gp.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 
 #Events
 
+file = File.open(Rails.root.join("db/seed/image/events/birthday.jpeg"))
+bd = Event.create!(name:"Birthday diner", description: "To celebrate my 30th birthday, I invite you to my favorite food hall in Lima: Mercado 28! We can meet from 7:30pm for an aperitif and then we can each eat what we like!", event_date: "2022-12-15", spot: mercado28, creator: thea)
+bd.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
-culey_event = Event.create!(name: "Birthday diner", description: "To celebrate my 30th birthday, I invite you to my favorite food hall in Lima: Mercado 28! We can meet from 7:30pm for an aperitif and then we can each eat what we like!", event_date: "2022-12-15", spot: mercado28, creator: thea)
-gin_event = Event.create!(name:"Christmas diner", description: "To celebrate Christmas, far from our entourage, I suggest that we meet to celebrate it together! La Bo'M is a great French restaurant with delicious pancakes, so for all the French (and others) in need of pancakes, don't hesitate to join us!", event_date:"2022-12-24", spot: labom, creator: alexandra)
-gin_event2 = Event.create!(name:"Last 2022 lunch", description: "I really love gins and the Gin bar seems to be specialized in making some, do you want to join me ?", event_date:"2022-12-31", spot: cantarana, creator: paola)
+file = File.open(Rails.root.join("db/seed/image/events/christmas.jpeg"))
+christmas = Event.create!(name:"Christmas diner", description: "To celebrate Christmas, far from our entourage, I suggest that we meet to celebrate it together! La Bo'M is a great French restaurant with delicious pancakes, so for all the French (and others) in need of pancakes, don't hesitate to join us!", event_date:"2022-12-24", spot: labom, creator: alexandra)
+christmas.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
+
+file = File.open(Rails.root.join("db/seed/image/events/christmas.jpeg"))
+newyear = Event.create!(name:"Last 2022 lunch", description: "I really love gins and the Gin bar seems to be specialized in making some, do you want to join me ?", event_date:"2022-12-31", spot: cantarana, creator: paola)
+newyear.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
+
 
 #Bookmarks
 
-bookmark1 = Bookmark.create!(user: chloe, event: culey_event)
-bookmark2 = Bookmark.create!(user: thea, event: gin_event)
-bookmark3 = Bookmark.create!(user: thea, event: gin_event2)
+bookmark1 = Bookmark.create!(user: chloe, event: bd)
+bookmark2 = Bookmark.create!(user: thea, event: christmas)
+bookmark3 = Bookmark.create!(user: thea, event: newyear)
 
 puts "... Super-mega-database-de-beau-gosse.final.final2.TRUEFINAL created"
