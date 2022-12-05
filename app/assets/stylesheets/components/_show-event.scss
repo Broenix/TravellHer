@@ -46,4 +46,15 @@
     margin-bottom: 0px;
   }
 
+  .event-name-picture {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      height:40px;
+      width: 40px;
+      border-radius: 50%;
+    }
+  }
+
 }
