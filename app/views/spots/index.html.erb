@@ -5,8 +5,11 @@
     class: "form-control",
     placeholder: "Find a spot"
   %>
-  <%= submit_tag "Search", class: "btn btn-primary" %>
+  <%= submit_tag "Search", class: "btn button-essential " %>
 <% end %>
+
+
+
 
 <br>
   <% @spots.sort_by{|r| r.try(:rating)}.reverse.each do |spot| %>
