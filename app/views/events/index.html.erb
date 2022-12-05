@@ -1,7 +1,4 @@
 <div class="container-event">
-
-
-<br>
   <% @events.each do |event| %>
       <%= link_to event_path(event), class:"link-card-event" do %>
         <div class="card-event">
@@ -14,7 +11,6 @@
                 </div>
                   <div class="event-profil-img">
                     <%= image_tag event.user.photo %>
-
                   </div>
           </div>
         </div>
