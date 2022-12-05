@@ -10,10 +10,10 @@
               <h3> <%=  event.name %> </h3>
                   <p> 📍<%= event.spot.name %></p>
                 <div class="event-date-card">
-                  <%= event.event_date %>
+                  📆<%= event.event_date %>
                 </div>
                   <div class="event-profil-img">
-                    <%= image_tag current_user.photo %>
+                    <%= image_tag event.user.photo %>
 
                   </div>
           </div>
