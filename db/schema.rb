@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_05_115022) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_05_143850) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -69,6 +69,17 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_115022) do
     t.index ["user_id"], name: "index_events_on_user_id"
   end
 
+  create_table "reviews", force: :cascade do |t|
+    t.text "comment"
+    t.bigint "user_id", null: false
+    t.bigint "spot_id", null: false
+    t.integer "rating"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["spot_id"], name: "index_reviews_on_spot_id"
+    t.index ["user_id"], name: "index_reviews_on_user_id"
+  end
+
   create_table "spots", force: :cascade do |t|
     t.string "name"
     t.string "location"
@@ -102,5 +113,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_115022) do
   add_foreign_key "bookmarks", "users"
   add_foreign_key "events", "spots"
   add_foreign_key "events", "users"
+  add_foreign_key "reviews", "spots"
+  add_foreign_key "reviews", "users"
   add_foreign_key "spots", "categories"
 end
