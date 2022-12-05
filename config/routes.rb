@@ -13,7 +13,9 @@ Rails.application.routes.draw do
   end
   resources :events, only: [:show, :index] do
     resources :bookmarks, only: [:create]
-    resources :chatrooms, only: :show
+    resources :chatrooms, only: :show do
+      resources :messages, only: :create
+    end
   end
   resources :bookmarks, only: [:index]
 end
