@@ -1,13 +1,15 @@
 <div class="card-container">
-<%= form_with url: category_spots_path, method: :get, class: "d-flex" do %>
-  <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Find a spot"
-  %>
-  <%= submit_tag "Search", class: "btn button-essential " %>
-<% end %>
-
+  <div class="wrap">
+  <%= form_with url: category_spots_path, method: :get, class: "d-flex" do %>
+    <%= text_field_tag :query,
+      params[:query],
+      class: "searchTerm",
+      placeholder: "Find a spot"
+    %>
+    <button type="submit" class="searchButton">
+    <i class="fa fa-search"></i>
+  <% end %>
+  </div>
 
 
 
@@ -17,7 +19,7 @@
         <div class="card-spot">
             <%= image_tag spot.photo, class:"card-image" %>
             <div class="info-spot-card">
-              <h3> <%= spot.name.capitalize %></h3>
+              <h3> <%= spot.name %></h3>
               <p> 📍<%=  spot.location%></p>
                 <div class="spot-rating">
                 <%  spot.rating.to_i.times do  %>
@@ -31,4 +33,4 @@
   <% end %>
 </div>
 
-<%# fa-regular fa-star"  %>
+<%# fa-regular fa-star"  TO DO ! %>
