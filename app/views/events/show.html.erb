@@ -5,12 +5,18 @@
       <%= image_tag @event.spot.photo, height: 300, width: 300, crop: :fill %>
     </div>
 
-    <div class="show-pres p-4">
-      <h3><%= @event.name %></h3>
-      <p><%= @event.description %></p>
-      <%= link_to "Join this event", bookmarks_path, class: "button-essential" %>
-      <%= link_to "Back", spot_path %>
-    </div>
-    </div>
-  </div>
+      <div class="show-pres p-4">
+          <h3><%= @event.name %></h3>
+            <p>🗓 <%= @event.event_date %> </p>
+              <div class="line-5"></div>
+                <h4>Description</h4>
+                  <p><%= @event.description %></p>
+                  <div class="line-5"></div>
+                <h4>Event place</h4>
+                  <p><%= @event.spot.location %></p>
+            <div class="join-an-event">
+              <%= link_to "Join this event", bookmarks_path, class: "button-essential" %>
+              <%= link_to "Back", spot_path %>
+            </div>
+        </div>
 </div>

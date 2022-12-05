@@ -1,7 +1,27 @@
-<p>bonjour voici le spot de ouf</p>
 
-<% @events.each do |event| %>
-<h3> <%= link_to event.name, event_path(event) %> </h3>
-<% end %>
+<div class="spot">
+  <div class="info-spot">
+    <div class="picture-spot">
+      <%= image_tag @spot.photo, height: 300, width: 300, crop: :fill %>
+    </div>
 
-<%= link_to "create an event",  new_spot_event_path(@spot) %>
+      <div class="show-pres-spot p-4">
+        <div class="spot-title-rating">
+            <h3><%= @spot.name %></h3>
+              <div class="rating-star">
+                <strong><%= @spot.rating.to_i%></strong>
+                <i class="fa-solid fa-star"></i>
+              </div>
+        </div>
+          <p><strong><%= @spot.location %></strong></p>
+            <div class="line-5"></div>
+              <h4>Description</h4>
+                <p> ici la description</p>
+                <div class="line-5"></div>
+              <h4>Popular review</h4>
+                <p>coucou</p>
+          <div class="join-an-spot">
+            <%= link_to "Organize an event",  new_spot_event_path(@spot), class:"button-essential" %>
+          </div>
+      </div>
+</div>
