@@ -106,8 +106,8 @@ newyear.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg"
 
 #Bookmarks
 
-bookmark1 = Bookmark.create!(user: chloe, event: bd)
-bookmark2 = Bookmark.create!(user: thea, event: christmas)
+bookmark1 = Bookmark.create!(user: paola, event: bd)
+bookmark2 = Bookmark.create!(user: alexandra, event: christmas)
 bookmark3 = Bookmark.create!(user: thea, event: newyear)
 
 puts "... Super-mega-database-de-beau-gosse.final.final2.TRUEFINAL created"
