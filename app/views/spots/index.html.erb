@@ -22,8 +22,10 @@
               <h3> <%= spot.name %></h3>
               <p> 📍<%=  spot.location%></p>
                 <div class="spot-rating">
-                <%  spot.rating.to_i.times do  %>
-                  <i class="fa-solid fa-star"></i>
+                  <% spot.reviews.each do |review| %>
+                    <%  review.rating.times do  %>
+                      <i class="fa-solid fa-star"></i>
+                    <% end %>
                   <% end %>
                 </div>
             </div>
