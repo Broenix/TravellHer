@@ -92,17 +92,16 @@ gp.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 #Events
 
 file = File.open(Rails.root.join("db/seed/image/events/birthday.jpeg"))
-bd = Event.create!(name:"Birthday diner", description: "To celebrate my 30th birthday, I invite you to my favorite food hall in Lima: Mercado 28! We can meet from 7:30pm for an aperitif and then we can each eat what we like!", event_date: "2022-12-15", spot: mercado28, creator: thea)
+bd = Event.create!(name:"Birthday diner", description: "To celebrate my 30th birthday, I invite you to my favorite food hall in Lima: Mercado 28! We can meet from 7:30pm for an aperitif and then we can each eat what we like!", event_date: "2022-12-15", spot: mercado28, user: thea)
 bd.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/events/christmas.jpeg"))
-christmas = Event.create!(name:"Christmas diner", description: "To celebrate Christmas, far from our entourage, I suggest that we meet to celebrate it together! La Bo'M is a great French restaurant with delicious pancakes, so for all the French (and others) in need of pancakes, don't hesitate to join us!", event_date:"2022-12-24", spot: labom, creator: alexandra)
+christmas = Event.create!(name:"Christmas diner", description: "To celebrate Christmas, far from our entourage, I suggest that we meet to celebrate it together! La Bo'M is a great French restaurant with delicious pancakes, so for all the French (and others) in need of pancakes, don't hesitate to join us!", event_date:"2022-12-24", spot: labom, user: alexandra)
 christmas.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/events/christmas.jpeg"))
-newyear = Event.create!(name:"Last 2022 lunch", description: "I really love gins and the Gin bar seems to be specialized in making some, do you want to join me ?", event_date:"2022-12-31", spot: cantarana, creator: paola)
+newyear = Event.create!(name:"Last 2022 lunch", description: "I really love gins and the Gin bar seems to be specialized in making some, do you want to join me ?", event_date:"2022-12-31", spot: cantarana, user: paola)
 newyear.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
-
 
 #Bookmarks
 
