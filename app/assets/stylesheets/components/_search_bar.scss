@@ -7,11 +7,11 @@
 
 .searchTerm {
   width: 100%;
-  border: 3px solid #82D7AE;
+  border: 2px solid #82D7AE;
   border-right: none;
   padding: 5px;
-  height: 36px;
-  border-radius: 10px 0 0 10px;
+  height: 40px;
+  border-radius: 18px 0 0 18px;
   outline: none;
   color: #9DBFAF;
 }
@@ -22,12 +22,12 @@
 
 .searchButton {
   width: 40px;
-  height: 36px;
+  height: 40px;
   border: 1px solid #82D7AE;
   background: #82D7AE;
   text-align: center;
   color: #fff;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 18px 18px 0;
   cursor: pointer;
   font-size: 20px;
 }
@@ -36,6 +36,4 @@
 .wrap{
   width: 100%;
   margin-top: 100px;
-
-
 }
