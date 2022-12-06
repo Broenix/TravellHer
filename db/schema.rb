@@ -105,6 +105,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_161210) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "description"
+    t.float "rating"
     t.index ["category_id"], name: "index_spots_on_category_id"
   end
 
