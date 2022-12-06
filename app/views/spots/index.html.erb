@@ -4,14 +4,12 @@
     <%= text_field_tag :query,
       params[:query],
       class: "searchTerm",
-      placeholder: " Find a spot"
+      placeholder: " Enter a city, an area, a spot... "
     %>
     <button type="submit" class="searchButton">
     <i class="fa fa-search"></i>
   <% end %>
   </div>
-
-
 
 <br>
   <% @spots.sort_by{|r| r.try(:rating)}.reverse.each do |spot| %>
@@ -22,11 +20,14 @@
               <h3> <%= spot.name %></h3>
               <p> 📍<%=  spot.location%></p>
                 <div class="spot-rating">
-                  <% spot.reviews.each do |review| %>
-                    <%  review.rating.times do  %>
+                  <div class="spot-stars">
+                    <%  spot.rating.to_i.times do  %>
                       <i class="fa-solid fa-star"></i>
                     <% end %>
-                  <% end %>
+                  </div>
+                  <div class="spot-reviews">
+                    <%= spot.reviews.count+rand(1..10)  %> reviews
+                  </div>
                 </div>
             </div>
         </div>
