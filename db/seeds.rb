@@ -1,11 +1,12 @@
 puts "Cleaning database..."
 
-Spot.destroy_all
-User.destroy_all
+Chatroom.destroy_all
 Event.destroy_all
+Review.destroy_all
+Spot.destroy_all
 Category.destroy_all
 Bookmark.destroy_all
-Review.destroy_all
+User.destroy_all
 
 #Category
 file = File.open(Rails.root.join("app/assets/images/category/restaurant.png"))
