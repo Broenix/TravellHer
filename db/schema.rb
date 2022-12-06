@@ -101,6 +101,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_06_085334) do
   create_table "spots", force: :cascade do |t|
     t.string "name"
     t.string "location"
+    t.float "rating"
     t.bigint "category_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
