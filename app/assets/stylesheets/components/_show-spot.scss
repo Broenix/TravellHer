@@ -8,6 +8,13 @@
   h2 {
     margin-bottom: 10px;
   }
+
+  h4 {
+    color: black;
+  }
+  i {
+    color: rgb(255, 204, 0);
+  }
   .picture-spot {
     img {
       object-fit: cover;
@@ -42,6 +49,10 @@
     );
   }
 
+  .review-text {
+    font-style: italic;
+  }
+
   .join-an-spot {
     display: flex;
     justify-content: center;
@@ -55,4 +66,22 @@
     justify-content: space-between;
   }
 
+  .info-spot p {
+    margin-top: -20px;
+    width: 250px;
+  }
+
+
+  .spot-reviews {
+    color: black;
+  }
+
+
+  .rating-star {
+    color: black;
+  }
+  .show-rating-review {
+    display: inline-grid;
+    justify-items: center;
+  }
 }
