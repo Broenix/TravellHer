@@ -1,6 +1,6 @@
 puts "Cleaning database..."
 
-Message.destroy_all
+Message.destroy_all 
 Chatroom.destroy_all
 Event.destroy_all
 Review.destroy_all
