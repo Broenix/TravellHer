@@ -28,9 +28,7 @@
                 <div class="line-5"></div>
               <h4>Popular review</h4>
                 <div class="review-text">
-                  <% @reviews.each do |review| %>
-                  "<%= review.comment %>"
-                  <% end %>
+                  <%= @reviews.first.comment %>
                 </div>
                   <div class="join-an-spot">
                     <%= link_to "Organize an event",  new_spot_event_path(@spot), class:"button-essential" %>
