@@ -109,29 +109,29 @@ gp.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 #Events
 
 file = File.open(Rails.root.join("db/seed/image/events/birthday.jpeg"))
-bd = Event.create!(name:"Birthday diner", description: "To celebrate my 30th birthday, I invite you to my favorite food hall in Lima: Mercado 28! We can meet from 7:30pm for an aperitif and then we can each eat what we like!", event_date: "2022-12-15", spot: mercado28, user: thea)
+bd = Event.create!(name:"Birthday diner", description: "To celebrate my 30th birthday, I invite you to my favorite food hall in Lima: Mercado 28! We can meet from 7:30pm for an aperitif and then we can each eat what we like!", event_date: "2022-12-15 18:30", spot: mercado28, user: thea)
 bd.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
-Chatroom.create!(name: "Birthday diner chatroom", event: bd)
+Chatroom.create!(name: "Birthday diner", event: bd)
 
 file = File.open(Rails.root.join("db/seed/image/events/christmas.jpg"))
-christmas = Event.create!(name:"Christmas diner", description: "To celebrate Christmas, far from our entourage, I suggest that we meet to celebrate it together! La Bo'M is a great French restaurant with delicious pancakes, so for all the French (and others) in need of pancakes, don't hesitate to join us!", event_date:"2022-12-24", spot: labom, user: alexandra)
+christmas = Event.create!(name:"Christmas diner", description: "To celebrate Christmas, far from our entourage, I suggest that we meet to celebrate it together! La Bo'M is a great French restaurant with delicious pancakes, so for all the French (and others) in need of pancakes, don't hesitate to join us!", event_date:"2022-12-24 19:00", spot: labom, user: alexandra)
 christmas.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
-Chatroom.create!(name: "Christmas diner chatroom", event: christmas)
+Chatroom.create!(name: "Christmas diner", event: christmas)
 
 file = File.open(Rails.root.join("db/seed/image/events/newyear.jpeg"))
-newyear = Event.create!(name:"Last 2022 lunch", description: "I really love gins and the Gin bar seems to be specialized in making some, do you want to join me ?", event_date:"2022-12-31", spot: greenfalafel, user: paola)
+newyear = Event.create!(name:"Last 2022 lunch", description: "I really love gins and the Gin bar seems to be specialized in making some, do you want to join me ?", event_date:"2022-12-31 12:30", spot: greenfalafel, user: paola)
 newyear.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 Chatroom.create!(name: "Last 2022 lunch", event: newyear)
 
 file = File.open(Rails.root.join("db/seed/image/events/ceviche.jpg"))
-food = Event.create!(name:"Tasting best ceviche", description: "I propose you to taste the best ceviche of Lima, a must-try dish of the country! I recommend 100% this restaurant that offers affordable dishes, high quality and in one of the most pleasant and safest neighborhoods of Barranco! We can meet at 12am for lunch! I hope to see many of you 👌🏻", event_date: "2023-01-17", spot: cantarana, user: lucia)
+food = Event.create!(name:"Tasting best ceviche", description: "I propose you to taste the best ceviche of Lima, a must-try dish of the country! I recommend 100% this restaurant that offers affordable dishes, high quality and in one of the most pleasant and safest neighborhoods of Barranco! We can meet at 12am for lunch! I hope to see many of you 👌🏻", event_date: "2023-01-17 12:00", spot: cantarana, user: lucia)
 food.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 Chatroom.create!(name: "Tasting best ceviche", event: food)
 
 file = File.open(Rails.root.join("db/seed/image/events/machu.jpg"))
 machu = Event.create!(name:"Machu Pichu Tour", description: "I go to Machu Pichu on 2023-01-30 with the agency CuzcoTours.
   It proposes a departure at 3 am and return the next day. They still have a place available and a ticket for the entrance.
-  Good price and team at the top and benevolent!", event_date: "2023-01-17", spot: cuzcotour, user: angela)
+  Good price and team at the top and benevolent!", event_date: "2023-01-17 03:00", spot: cuzcotour, user: angela)
 machu.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpg")
 Chatroom.create!(name: "Machu Pichu Tour", event: machu)
 
