@@ -12,15 +12,15 @@
   </div>
 
   <div class="global-events-cards">
-    <% @events.each do |event| %>
+    <% @events.sort_by{|r| r.try(:event_date)}.each do |event| %>
         <%= link_to event_path(event), class:"link-card-event" do %>
           <div class="card-event">
             <%= image_tag event.spot.photo, class:"card-image" %>
             <div class="info-event-card">
                 <h3> <%=  event.name %> </h3>
-                    <p> 📍<%= event.spot.name %></p>
+                    <p> 📍 <%= event.spot.name %></p>
                   <div class="event-date-card">
-                    📆<%= event.event_date %>
+                    📆  <%= event.event_date %>
                   </div>
                     <div class="event-profil-img">
                       <%= image_tag event.user.photo %>

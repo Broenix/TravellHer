@@ -11,7 +11,7 @@
   <% end %>
   </div>
 
-<br>
+  <br>
   <% @spots.sort_by{|r| r.try(:rating)}.reverse.each do |spot| %>
       <%= link_to spot_path(spot), class:"link-card-spot" do %>
         <div class="card-spot">

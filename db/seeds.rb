@@ -165,4 +165,14 @@ review19 = Review.create!(comment:"You must go there if you visit Lima!", rating
 review20 = Review.create!(comment:"I like the dessert, but the plate was dirty...", rating:3, spot: cantarana, user:paola )
 review21 = Review.create!(comment:"The owner is really oppresing, not a place to be in Lima ", rating:2, spot: labom, user:alexandra )
 
+review22 = Review.create!(comment:"Good restaurant, I love the local food !", rating:5, spot: mercado28, user:thea )
+review23 = Review.create!(comment:"Gastronomical peruvian food, good spot.", rating:5, spot: mercado28, user:alexandra )
+review24 = Review.create!(comment:"You must go there !!!!", rating:5, spot: mercado28, user:thea )
+review25 = Review.create!(comment:"나는 음식을 사랑", rating:5, spot: mercado28, user:thea )
+review26 = Review.create!(comment:"Best spot in town, safe place and healthly food", rating:5, spot: gp, user:alexandra )
+review27 = Review.create!(comment:"Marvellous !!!", rating:5, spot: gp, user:thea )
+review28 = Review.create!(comment:"I love the vermicelli, the soy, the sweet and sour sauce, oh my god, it's a delight", rating:4, spot: chifatiti, user:alexandra )
+review29 = Review.create!(comment:"For veggie, or not, good restaurant! ", rating:4, spot: greenfalafel, user:thea )
+
+
 puts "... Super-mega-database-de-beau-gosse.final.final2.TRUEFINAL .TRUTRUTRUTRUTRUEFINAL.ULTIMATEFINAL created"
