@@ -7,7 +7,7 @@
       <div class="event-name-picture">
         <div>
           <h3><%= @event.name %></h3>
-          <p>🗓 <%= @event.event_date %> </p>
+          <p>🗓 <%= @event.event_date.strftime("%Y-%m-%d at %I:%M%p") %> </p>
         </div>
           <%= image_tag @event.user.photo %>
         </div>
