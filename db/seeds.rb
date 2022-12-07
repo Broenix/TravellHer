@@ -121,7 +121,7 @@ Chatroom.create!(name: "Christmas diner chatroom", event: christmas)
 file = File.open(Rails.root.join("db/seed/image/events/newyear.jpeg"))
 newyear = Event.create!(name:"Last 2022 lunch", description: "I really love gins and the Gin bar seems to be specialized in making some, do you want to join me ?", event_date:"2022-12-31", spot: greenfalafel, user: paola)
 newyear.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
-Chatroom.create!(name: "Last 2022 lunch chatroom", event: newyear)
+Chatroom.create!(name: "Last 2022 lunch", event: newyear)
 
 file = File.open(Rails.root.join("db/seed/image/events/ceviche.jpg"))
 food = Event.create!(name:"Tasting best ceviche", description: "I propose you to taste the best ceviche of Lima, a must-try dish of the country! I recommend 100% this restaurant that offers affordable dishes, high quality and in one of the most pleasant and safest neighborhoods of Barranco! We can meet at 12am for lunch! I hope to see many of you 👌🏻", event_date: "2023-01-17", spot: cantarana, user: lucia)
