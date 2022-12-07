@@ -9,7 +9,7 @@
   border: 1px solid #c1ebd7;
   width: 100%;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 20px 0 0 20px;
 }
 
 // To style the message itself
@@ -37,17 +37,22 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 0 10px;
+  padding: 10px;
   left: 0;
+  background-color: white;
 }
 
 .messages {
-  padding-bottom: 3rem;
+  padding-block: 6rem 3rem;
 }
 
 .message {
   display: flex;
   width: auto;
+}
+
+.message_content {
+  margin: 0 !important;
 }
 
 #new_message {
@@ -58,11 +63,15 @@
 
 .input-message-chatroom {
   width: 100%;
+  display: flex;
 }
 
 .button-chatroom {
   margin: 0;
   z-index: 4;
+  input {
+    border-radius: 0 20px 20px 0;
+  }
 }
 
 .title-container-chatroom {
@@ -70,4 +79,6 @@
   background-color: white;
   top: 60px;
   padding-left: 25px;
+  padding-right: 35px;
+  margin-bottom: 10px;
 }
