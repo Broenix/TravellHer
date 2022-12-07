@@ -8,6 +8,8 @@
   color: black;
   border: 1px solid #c1ebd7;
   width: 100%;
+  background-color: white;
+  border-radius: 20px;
 }
 
 // To style the message itself
@@ -32,9 +34,15 @@
 }
 
 .input-container {
-  position: sticky;
+  position: fixed;
   bottom: 0;
-  display: flex;
+  width: 100%;
+  padding: 0 10px;
+  left: 0;
+}
+
+.messages {
+  padding-bottom: 3rem;
 }
 
 .message {
@@ -54,4 +62,12 @@
 
 .button-chatroom {
   margin: 0;
+  z-index: 4;
+}
+
+.title-container-chatroom {
+  position: fixed;
+  background-color: white;
+  top: 60px;
+  padding-left: 25px;
 }
