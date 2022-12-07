@@ -12,6 +12,15 @@
     <title><%= meta_title %></title>
     <meta name="description" content="<%= meta_description %>">
 
+
+    <%= favicon_link_tag "favicon.png", rel: "icon", type: "image/png" %>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link rel="manifest" href="<%= asset_path 'manifest.json' %>">
+    
+    <%= render 'shared/ios_pwa_links' %>
     <!-- Facebook Open Graph data -->
     <meta property="og:title" content="<%= meta_title %>">
     <meta property="og:type" content="website">
@@ -27,6 +36,7 @@
     <meta name="twitter:description" content="<%= meta_description %>">
     <meta name="twitter:creator" content="<%= DEFAULT_META["twitter_account"] %>">
     <meta name="twitter:image:src" content="<%= meta_image %>">
+
   </head>
 
   <body>
