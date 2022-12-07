@@ -24,11 +24,9 @@
 }
 .event_photo .form-control {
   border: none;
-}
-
-.form-control {
   color: transparent;
 }
+
 .form-control::-webkit-file-upload-button {
   visibility: hidden;
 }
@@ -50,7 +48,6 @@
   font-size: 30pt;
 }
 .form-control:focus {
-  color: transparent;
   background-color: transparent;
   border: none;
   outline: 0;

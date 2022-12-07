@@ -4,7 +4,7 @@
     <%= text_field_tag :query,
       params[:query],
       class: "searchTerm",
-      placeholder: " Find a spot"
+      placeholder: " Enter a city, an area, a spot... "
     %>
     <button type="submit" class="searchButton">
     <i class="fa fa-search"></i>
@@ -20,7 +20,7 @@
                 <h3> <%=  event.name %> </h3>
                     <p> 📍<%= event.spot.name %></p>
                   <div class="event-date-card">
-                    📆<%= event.event_date %>
+                    📆<%= event.event_date.strftime("%Y-%m-%d at %I:%M") %>
                   </div>
                     <div class="event-profil-img">
                       <%= image_tag event.user.photo %>
