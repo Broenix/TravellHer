@@ -9,7 +9,7 @@
           <h3><%= @event.name %></h3>
           <p>🗓 <%= @event.event_date %> </p>
         </div>
-          <%= image_tag current_user.photo %>
+          <%= image_tag @event.user.photo %>
         </div>
         <div class="line-5"></div>
           <h4>Description</h4>

@@ -68,7 +68,6 @@ chifatiti = Spot.create!(name:"Chifa Titi" , location:"Javier Prado Este 1212, S
 chifatiti.photo.attach(io: file, filename: "photo.png", content_type: "image/png")
 
 
-
 file = File.open(Rails.root.join("db/seed/image/spots/cusco.jpeg"))
 cuzcotour = Spot.create!(name:"Cuzco Tour" , location:"Av. de la Cultura A-9, Cusco 08003, Peru", rating:4, category: tour, description: "Authentical moments to discover the real Peruvian culture")
 cuzcotour.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
@@ -79,23 +78,23 @@ mercado28 = Spot.create!(name:"Mercado 28" , location:"Vasco Núñez de Balboa 7
 mercado28.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/spots/cantarana.jpeg"))
-cantarana = Spot.create!(name:"Canta Rana" , location:"Genova 101, Barranco, Peru", rating:4, category: restaurant, description: "The menu is long and varied, from rice to seafood, passing by the causa. This is the place to go to taste the famous Peruvian ceviche!")
+cantarana = Spot.create!(name:"Canta Rana" , location:"Genova 101, Barranco, Peru", rating:3, category: restaurant, description: "The menu is long and varied, from rice to seafood, passing by the causa. This is the place to go to taste the famous Peruvian ceviche!")
 cantarana.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/spots/labom.jpeg"))
-labom = Spot.create!(name:"Creperia La Bo'M" , location:"Av. Mariscal La Mar 770, Miraflores, Peru", rating:5, category: restaurant, description: "Located in the very authentic neighborhood of San Blas, this creperie held by French people has not finished surprising you with flavors inspired by the world cuisine.")
+labom = Spot.create!(name:"Creperia La Bo'M" , location:"Av. Mariscal La Mar 770, Miraflores, Peru", rating:2, category: restaurant, description: "Located in the very authentic neighborhood of San Blas, this creperie held by French people has not finished surprising you with flavors inspired by the world cuisine.")
 labom.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/spots/pizzaraul.png"))
-raul = Spot.create!(name:"Pizza Raul" , location:"Genova 115, Barranco 15063, Peru", rating:3, category: restaurant, description: "The best of the traditional pizzas at a very low price. Raul will welcome you in his restaurant with a soccer atmosphere.")
+raul = Spot.create!(name:"Pizza Raul" , location:"Genova 115, Barranco 15063, Peru", rating:5, category: restaurant, description: "The best of the traditional pizzas at a very low price. Raul will welcome you in his restaurant with a soccer atmosphere.")
 raul.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/spots/greenfa.jpg"))
-greenfalafel = Spot.create!(name:"Green Falafel" , location:"C. Schell 452, Miraflores, Peru", rating:5, category: restaurant, description: "The best falafels in Peru are here! Prepared right before your eyes, they are crispy and super soft inside. The restaurant is located in the San Blas market and is run by a family.")
+greenfalafel = Spot.create!(name:"Green Falafel" , location:"C. Schell 452, Miraflores, Peru", rating:4, category: restaurant, description: "The best falafels in Peru are here! Prepared right before your eyes, they are crispy and super soft inside. The restaurant is located in the San Blas market and is run by a family.")
 greenfalafel.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/spots/chakruna.jpg"))
-chacruna = Spot.create!(name:"Chakruna" , location:"Ca. Gral. Borgoño Nº860, Barranco, Peru", rating:4, category: restaurant, description:"The best burgers in the capital are here! In a golden oven bun, with a wide variety of toppings, you won't be disappointed!")
+chacruna = Spot.create!(name:"Chakruna" , location:"Ca. Gral. Borgoño Nº860, Barranco, Peru", rating:5, category: restaurant, description:"The best burgers in the capital are here! In a golden oven bun, with a wide variety of toppings, you won't be disappointed!")
 chacruna.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/spots/sanblas.png"))
@@ -103,7 +102,7 @@ sanblas = Spot.create!(name:"Mercado San Blas" , location:"C. Amador Merino Reyn
 sanblas.photo.attach(io: file, filename: "photo.jpg", content_type: "image/png")
 
 file = File.open(Rails.root.join("db/seed/image/spots/greenp.png"))
-gp = Spot.create!(name:"Green Point" , location:"Av. Simón Bolivar 1515, Pueblo Libre, Peru", rating:4, category: restaurant, description:"The best falafels in Peru are here! Prepared right before your eyes, they are crispy and super soft inside. The restaurant is located in the San Blas market and is run by a family.")
+gp = Spot.create!(name:"Green Point" , location:"Av. Simón Bolivar 1515, Pueblo Libre, Peru", rating:5, category: restaurant, description:"The best falafels in Peru are here! Prepared right before your eyes, they are crispy and super soft inside. The restaurant is located in the San Blas market and is run by a family.")
 gp.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 
@@ -153,5 +152,17 @@ review6 = Review.create!(comment:"Very good family restaurant, affordable and es
 review7 = Review.create!(comment:"Really better than McDonald's !!!", rating:5, spot: chacruna, user:thea )
 review8 = Review.create!(comment:"This typical foodhall represents perfectly the South American culture, I recommend it. ", rating:4, spot: sanblas, user:paola )
 review9 = Review.create!(comment:"Good value for money. ", rating:5, spot: gp, user:thea )
+review10 = Review.create!(comment:"The owner is friendly and the food is healthly", rating:5, spot: mercado28, user:alexandra )
+review11 = Review.create!(comment:"Chinese food in Lima, what a surprise !!!!", rating:4, spot: chifatiti, user:alexandra )
+review12 = Review.create!(comment:"The food is correct, but the employees don't smile at all. Totally skipable", rating:3, spot: cantarana, user:thea )
+review13 = Review.create!(comment:"don't go there. ", rating:2, spot: labom, user:paola )
+review14 = Review.create!(comment:"If you want good pizza in Lima, I suggest the reina!", rating:5, spot: raul, user:thea )
+review15 = Review.create!(comment:"The owner is very kind, good spot for local food!", rating:4, spot: greenfalafel, user:thea )
+review16 = Review.create!(comment:"Good burgers, the french fries are AWESOME!!! thanks Manuela, the lovely waitress", rating:5, spot: chacruna, user:alexandra )
+review17 = Review.create!(comment:"You must eat the speciality of the restaurant, the ceviche is amazing! ", rating:4, spot: sanblas, user:thea )
+review18 = Review.create!(comment:"Nice restaurant, safe place.", rating:5, spot: gp, user:paola )
+review19 = Review.create!(comment:"You must go there if you visit Lima!", rating:5, spot: mercado28, user:paola )
+review20 = Review.create!(comment:"I like the dessert, but the plate was dirty...", rating:3, spot: cantarana, user:paola )
+review21 = Review.create!(comment:"The owner is really oppresing, not a place to be in Lima ", rating:2, spot: labom, user:alexandra )
 
 puts "... Super-mega-database-de-beau-gosse.final.final2.TRUEFINAL .TRUTRUTRUTRUTRUEFINAL.ULTIMATEFINAL created"
