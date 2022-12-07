@@ -26,5 +26,10 @@
 #sticky {
   position: fixed;
   width: 100%;
-  top: 10px;
+  top: 0px;
+  padding-block: 10px;
+}
+
+.bg-white {
+  background-color: white;
 }
