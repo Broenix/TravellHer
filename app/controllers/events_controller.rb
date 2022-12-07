@@ -21,14 +21,15 @@ class EventsController < ApplicationController
 
   def new
     @event = Event.new # Needed to instantiate the form_with
+    @spot = Spot.find(params[:spot_id])
   end
 
   def create
-    @event = Event.create(events_params)
-      # @event.user_id = current_user.id
+    @event = Event.new(events_params)
+      @event.user_id = current_user.id
       @spot = Spot.find(params[:spot_id])
       @event.spot = @spot
-
+      
       if @event.save
         @chatroom = Chatroom.create(name: @event.name, event_id: @event.id)
         redirect_to events_path
