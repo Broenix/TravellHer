@@ -18,13 +18,15 @@
             <%= image_tag event.photo, class:"card-image" %>
             <div class="info-event-card">
                 <h3> <%=  event.name %> </h3>
-                    <p> 📍 <%= event.spot.name %></p>
+                <p> 📍 <%= event.spot.name %></p>
+                <div class="d-flex justify-content-between align-items-end">
                   <div class="event-date-card">
                     📆 <%= event.event_date.strftime("%^a %m-%d-%Y") %>
                   </div>
-                    <div class="event-profil-img">
-                      <%= image_tag event.user.photo %>
-                    </div>
+                  <div class="event-profil-img">
+                    <%= image_tag event.user.photo %>
+                  </div>
+                </div>
             </div>
           </div>
       <% end %>
