@@ -73,9 +73,9 @@ cuzcotour = Spot.create!(name:"Cuzco Tour" , location:"Av. de la Cultura A-9, Cu
 cuzcotour.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
 
-file = File.open(Rails.root.join("db/seed/image/spots/sanblas.png"))
+file = File.open(Rails.root.join("db/seed/image/spots/mercado28.jpeg"))
 mercado28 = Spot.create!(name:"Mercado 28" , location:"Vasco Núñez de Balboa 755, Miraflores, Peru", rating:5, category: restaurant, description: "Mercado 28 is the first gastronomic market in Peru, where people not only go to eat, but they come to 'do the market', browse the stalls and get lost among new aromas and flavors.")
-mercado28.photo.attach(io: file, filename: "photo.jpg", content_type: "image/png")
+mercado28.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/spots/cantarana.jpeg"))
 cantarana = Spot.create!(name:"Canta Rana" , location:"Genova 101, Barranco, Peru", rating:3, category: restaurant, description: "The menu is long and varied, from rice to seafood, passing by the causa. This is the place to go to taste the famous Peruvian ceviche!")
@@ -97,7 +97,7 @@ file = File.open(Rails.root.join("db/seed/image/spots/chakruna.jpg"))
 chacruna = Spot.create!(name:"Chakruna" , location:"Ca. Gral. Borgoño Nº860, Barranco, Peru", rating:5, category: restaurant, description:"The best burgers in the capital are here! In a golden oven bun, with a wide variety of toppings, you won't be disappointed!")
 chacruna.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
-file = File.open(Rails.root.join("db/seed/image/spots/mercado28.jpeg"))
+file = File.open(Rails.root.join("db/seed/image/spots/sanblas.png"))
 sanblas = Spot.create!(name:"Mercado San Blas" , location:"C. Amador Merino Reyna 589, San Isidro, Peru", rating:5, category: restaurant, description:"The San Blas market is the best place to come for lunch. Many restaurants are present and you can taste a lot of different cuisines.")
 sanblas.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jped")
 
@@ -143,7 +143,7 @@ bookmark3 = Bookmark.create!(user: thea, event: newyear)
 
 #Reviews
 
-review1 = Review.create!(comment:"Wow, I had a great time, this restaurant is just amazing. I recommend it 100%", rating:5, spot: mercado28, user:thea )
+review1 = Review.create!(comment:"I loved this place, I went back several times to try different dishes. In addition, the Miraflores area is very safe and very dynamic!", rating:5, spot: mercado28, user:thea )
 review2 = Review.create!(comment:"This restaurant is a change from the usual, the Chinese influences made us travel. ", rating:4, spot: chifatiti, user:paola )
 review3 = Review.create!(comment:"The food is very good, but the hygiene of the place leaves something to be desired. ", rating:3, spot: cantarana, user:alexandra )
 review4 = Review.create!(comment:"I'm French, I missed the local cuisine, but it was just awful. I don't recommend it, don't go there. ", rating:2, spot: labom, user:thea )
