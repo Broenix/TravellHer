@@ -25,6 +25,7 @@ class EventsController < ApplicationController
   end
 
   def create
+
     @event = Event.new(events_params)
     @event.user_id = current_user.id
     @spot = Spot.find(params[:spot_id])

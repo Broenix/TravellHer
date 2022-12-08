@@ -7,7 +7,10 @@ export default class extends Controller {
   connect() {
     new flatpickr(this.element, {
       enableTime: true,
-      dateFormat: "m/d/Y - h:i",
+      altInput: true,
+      altFormat: "m/d/Y - h:i",
+      dateFormat: "Y-m-d h:i",
+      altInputClass: "test_lol"
       // more options available on the documentation!
     });
   }
