@@ -150,7 +150,7 @@ review4 = Review.create!(comment:"I'm French, I missed the local cuisine, but it
 review5 = Review.create!(comment:"Am I in Peru or Italy? The pizzas are just crazy. If you're not afraid of peperonni and guanciale. This is the place to be. ", rating:5, spot: raul, user:paola )
 review6 = Review.create!(comment:"Very good family restaurant, affordable and especially veggie. ", rating:4, spot: greenfalafel, user:alexandra )
 review7 = Review.create!(comment:"Really better than McDonald's !!!", rating:5, spot: chacruna, user:thea )
-review8 = Review.create!(comment:"This typical foodhall represents perfectly the South American culture, I recommend it. ", rating:4, spot: sanblas, user:paola )
+review8 = Review.create!(comment:"This typical foodhall represents perfectly the South American culture, the spot is totally safe. You must see this food hall!", rating:5, spot: sanblas, user:paola )
 review9 = Review.create!(comment:"Good value for money. ", rating:5, spot: gp, user:thea )
 review10 = Review.create!(comment:"The owner is friendly and the food is healthly", rating:5, spot: mercado28, user:alexandra )
 review11 = Review.create!(comment:"Chinese food in Lima, what a surprise !!!!", rating:4, spot: chifatiti, user:alexandra )
@@ -159,12 +159,11 @@ review13 = Review.create!(comment:"don't go there. ", rating:2, spot: labom, use
 review14 = Review.create!(comment:"If you want good pizza in Lima, I suggest the reina!", rating:5, spot: raul, user:thea )
 review15 = Review.create!(comment:"The owner is very kind, good spot for local food!", rating:4, spot: greenfalafel, user:thea )
 review16 = Review.create!(comment:"Good burgers, the french fries are AWESOME!!! thanks Manuela, the lovely waitress", rating:5, spot: chacruna, user:alexandra )
-review17 = Review.create!(comment:"You must eat the speciality of the restaurant, the ceviche is amazing! ", rating:4, spot: sanblas, user:thea )
+review17 = Review.create!(comment:"You must eat the speciality of the restaurant, the ceviche is amazing! ", rating:5, spot: sanblas, user:thea )
 review18 = Review.create!(comment:"Nice restaurant, safe place.", rating:5, spot: gp, user:paola )
 review19 = Review.create!(comment:"You must go there if you visit Lima!", rating:5, spot: mercado28, user:paola )
 review20 = Review.create!(comment:"I like the dessert, but the plate was dirty...", rating:3, spot: cantarana, user:paola )
 review21 = Review.create!(comment:"The owner is really oppresing, not a place to be in Lima ", rating:2, spot: labom, user:alexandra )
-
 review22 = Review.create!(comment:"Good restaurant, I love the local food !", rating:5, spot: mercado28, user:thea )
 review23 = Review.create!(comment:"Gastronomical peruvian food, good spot.", rating:5, spot: mercado28, user:alexandra )
 review24 = Review.create!(comment:"You must go there !!!!", rating:5, spot: mercado28, user:thea )
@@ -173,6 +172,7 @@ review26 = Review.create!(comment:"Best spot in town, safe place and healthly fo
 review27 = Review.create!(comment:"Marvellous !!!", rating:5, spot: gp, user:thea )
 review28 = Review.create!(comment:"I love the vermicelli, the soy, the sweet and sour sauce, oh my god, it's a delight", rating:4, spot: chifatiti, user:alexandra )
 review29 = Review.create!(comment:"For veggie, or not, good restaurant! ", rating:4, spot: greenfalafel, user:thea )
+review30 = Review.create!(comment:"ここは、この国で一番安全な場所ではないのですか？", rating:5, spot: sanblas, user:alexandra )
 
 
-puts "... Super-mega-database-de-beau-gosse.final.final2.TRUEFINAL .TRUTRUTRUTRUTRUEFINAL.ULTIMATEFINAL created"
+puts "... Super-mega-database-de-beau-gosse.final.final2.TRUEFINAL.TRUTRUTRUTRUTRUEFINAL.ULTIMATEFINAL.definitive.legendary.edition created"
