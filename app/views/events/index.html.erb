@@ -1,14 +1,14 @@
 <div class="container-event">
   <div class="wrap">
-  <%= form_with url: events_path, method: :get, class: "d-flex" do %>
-    <%= text_field_tag :query,
-      params[:query],
-      class: "searchTerm",
-      placeholder: " Enter a city, an area, a spot... "
-    %>
-    <button type="submit" class="searchButton">
-    <i class="fa fa-search"></i>
-  <% end %>
+    <%= form_with url: events_path, method: :get, class: "d-flex" do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "searchTerm",
+        placeholder: " Enter a city, an area, a spot... "
+      %>
+      <button type="submit" class="searchButton">
+      <i class="fa fa-search"></i>
+    <% end %>
   </div>
 
   <div class="global-events-cards">
