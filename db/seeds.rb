@@ -126,7 +126,7 @@ Chatroom.create!(name: "Last 2022 lunch", event: newyear)
 file = File.open(Rails.root.join("db/seed/image/events/ceviche.jpg"))
 food = Event.create!(name:"Tasting best ceviche", description: "I propose you to taste the best ceviche of Lima, a must-try dish of the country! I recommend 100% this restaurant that offers affordable dishes, high quality and in one of the most pleasant and safest neighborhoods of Barranco! We can meet at 12am for lunch! I hope to see many of you 👌🏻", event_date: "2023-01-17", spot: cantarana, user: lucia)
 food.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
-Chatroom.create!(name: "Tasting best ceviche", event: food)
+foodchatroom = Chatroom.create!(name: "Tasting best ceviche", event: food)
 
 file = File.open(Rails.root.join("db/seed/image/events/machu.jpg"))
 machu = Event.create!(name:"Machu Pichu Tour", description: "I go to Machu Pichu on 2023-01-30 with the agency CuzcoTours.
@@ -174,5 +174,10 @@ review28 = Review.create!(comment:"I love the vermicelli, the soy, the sweet and
 review29 = Review.create!(comment:"For veggie, or not, good restaurant! ", rating:4, spot: greenfalafel, user:thea )
 review30 = Review.create!(comment:"ここは、この国で一番安全な場所ではないのですか？", rating:5, spot: sanblas, user:alexandra )
 
+#Messages
 
-puts "... Super-mega-database-de-beau-gosse.final.final2.TRUEFINAL.TRUTRUTRUTRUTRUEFINAL.ULTIMATEFINAL.definitive.legendary.edition created"
+message1 = Message.create!(chatroom: foodchatroom, content: "Hey, who want to try the best ceviche ?", user: paola)
+message2 = Message.create!(chatroom: foodchatroom, content: "I'll be part of it ! But I wont be there before 8PM", user: alexandra)
+message3 = Message.create!(chatroom: foodchatroom, content: "I'll come with my BFF !!!!!! :D", user: thea)
+
+puts "... Super-mega-database-de-beau-gosse.final.final2.TRUEFINAL.TRUTRUTRUTRUTRUEFINAL.ULTIMATEFINAL.definitive.legendary.edition2 created"
