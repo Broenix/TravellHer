@@ -98,7 +98,7 @@ chacruna = Spot.create!(name:"Chakruna" , location:"Ca. Gral. Borgoño Nº860, B
 chacruna.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
 file = File.open(Rails.root.join("db/seed/image/spots/sanblas.png"))
-sanblas = Spot.create!(name:"Mercado San Blas" , location:"C. Amador Merino Reyna 589, San Isidro, Peru", rating:4, category: restaurant, description:"The San Blas market is the best place to come for lunch. Many restaurants are present and you can taste a lot of different cuisines.")
+sanblas = Spot.create!(name:"Mercado San Blas" , location:"C. Amador Merino Reyna 589, San Isidro, Peru", rating:5, category: restaurant, description:"The San Blas market is the best place to come for lunch. Many restaurants are present and you can taste a lot of different cuisines.")
 sanblas.photo.attach(io: file, filename: "photo.jpg", content_type: "image/png")
 
 file = File.open(Rails.root.join("db/seed/image/spots/greenp.png"))
