@@ -26,22 +26,22 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new(events_params)
-      @event.user_id = current_user.id
-      @spot = Spot.find(params[:spot_id])
-      @event.spot = @spot
-      
-      if @event.save
-        @chatroom = Chatroom.create(name: @event.name, event_id: @event.id)
-        redirect_to events_path
-      else
-        render :new, status: :unprocessable_entity
-      end
+    @event.user_id = current_user.id
+    @spot = Spot.find(params[:spot_id])
+    @event.spot = @spot
+
+    if @event.save
+      @chatroom = Chatroom.create(name: @event.name, event_id: @event.id)
+      redirect_to events_path
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
   private
 
   def events_params
-    params.require(:event).permit(:name, :description, :event_date)
+    params.require(:event).permit(:name, :description, :event_date, :photo)
   end
 
 end
