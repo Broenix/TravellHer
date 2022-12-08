@@ -73,9 +73,9 @@ cuzcotour = Spot.create!(name:"Cuzco Tour" , location:"Av. de la Cultura A-9, Cu
 cuzcotour.photo.attach(io: file, filename: "photo.png", content_type: "image/jpeg")
 
 
-file = File.open(Rails.root.join("db/seed/image/spots/mercado28.jpeg"))
+file = File.open(Rails.root.join("db/seed/image/spots/sanblas.png"))
 mercado28 = Spot.create!(name:"Mercado 28" , location:"Vasco Núñez de Balboa 755, Miraflores, Peru", rating:5, category: restaurant, description: "Mercado 28 is the first gastronomic market in Peru, where people not only go to eat, but they come to 'do the market', browse the stalls and get lost among new aromas and flavors.")
-mercado28.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
+mercado28.photo.attach(io: file, filename: "photo.jpg", content_type: "image/png")
 
 file = File.open(Rails.root.join("db/seed/image/spots/cantarana.jpeg"))
 cantarana = Spot.create!(name:"Canta Rana" , location:"Genova 101, Barranco, Peru", rating:3, category: restaurant, description: "The menu is long and varied, from rice to seafood, passing by the causa. This is the place to go to taste the famous Peruvian ceviche!")
@@ -97,9 +97,9 @@ file = File.open(Rails.root.join("db/seed/image/spots/chakruna.jpg"))
 chacruna = Spot.create!(name:"Chakruna" , location:"Ca. Gral. Borgoño Nº860, Barranco, Peru", rating:5, category: restaurant, description:"The best burgers in the capital are here! In a golden oven bun, with a wide variety of toppings, you won't be disappointed!")
 chacruna.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jpeg")
 
-file = File.open(Rails.root.join("db/seed/image/spots/sanblas.png"))
+file = File.open(Rails.root.join("db/seed/image/spots/mercado28.jpeg"))
 sanblas = Spot.create!(name:"Mercado San Blas" , location:"C. Amador Merino Reyna 589, San Isidro, Peru", rating:5, category: restaurant, description:"The San Blas market is the best place to come for lunch. Many restaurants are present and you can taste a lot of different cuisines.")
-sanblas.photo.attach(io: file, filename: "photo.jpg", content_type: "image/png")
+sanblas.photo.attach(io: file, filename: "photo.jpg", content_type: "image/jped")
 
 file = File.open(Rails.root.join("db/seed/image/spots/greenp.png"))
 gp = Spot.create!(name:"Green Point" , location:"Av. Simón Bolivar 1515, Pueblo Libre, Peru", rating:5, category: restaurant, description:"The best falafels in Peru are here! Prepared right before your eyes, they are crispy and super soft inside. The restaurant is located in the San Blas market and is run by a family.")
