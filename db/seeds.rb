@@ -180,4 +180,4 @@ message1 = Message.create!(chatroom: foodchatroom, content: "Hey, who want to tr
 message2 = Message.create!(chatroom: foodchatroom, content: "I'll be part of it ! But I wont be there before 8PM", user: alexandra)
 message3 = Message.create!(chatroom: foodchatroom, content: "I'll come with my BFF !!!!!! :D", user: thea)
 
-puts "... Super-mega-database-de-beau-gosse.final.final2.TRUEFINAL.TRUTRUTRUTRUTRUEFINAL.ULTIMATEFINAL.definitive.legendary.edition2 created"
+puts "... Super-mega-database-de-beau-gosse.final.final2.TRUEFINAL.TRUTRUTRUTRUTRUEFINAL.ULTIMATEFINAL.definitive.legendaryedition2 created"
