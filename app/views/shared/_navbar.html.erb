@@ -1,4 +1,4 @@
-<div class="wrapper-navbar <%= "bg-white" if controller_name == 'chatrooms' %>" id="sticky">
+<div class="wrapper-navbar <%= "bg-white" if params[:action] != 'show' %>" id="sticky">
   <div>
     <%= link_to "/categories",  class: "navbar-brand" do %>
       <img src="<%= asset_path "LOGO.png" %>" alt="">
