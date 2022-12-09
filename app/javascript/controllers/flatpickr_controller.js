@@ -10,7 +10,8 @@ export default class extends Controller {
       altInput: true,
       altFormat: "m/d/Y - h:i",
       dateFormat: "Y-m-d h:i",
-      altInputClass: "test_lol"
+      altInputClass: "test_lol",
+      disableMobile: "true",
       // more options available on the documentation!
     });
   }
