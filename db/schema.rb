@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema[7.0].define(version: 2022_12_05_161210) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_07_135907) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -68,7 +67,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_161210) do
 
   create_table "events", force: :cascade do |t|
     t.string "name"
-    t.date "event_date"
+    t.datetime "event_date", precision: nil
     t.text "description"
     t.bigint "spot_id", null: false
     t.datetime "created_at", null: false
@@ -86,6 +85,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_161210) do
     t.datetime "updated_at", null: false
     t.index ["chatroom_id"], name: "index_messages_on_chatroom_id"
     t.index ["user_id"], name: "index_messages_on_user_id"
+  end
 
   create_table "reviews", force: :cascade do |t|
     t.text "comment"
@@ -101,6 +101,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_05_161210) do
   create_table "spots", force: :cascade do |t|
     t.string "name"
     t.string "location"
+    t.float "rating"
     t.bigint "category_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

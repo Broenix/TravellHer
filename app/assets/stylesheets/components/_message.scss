@@ -1,0 +1,86 @@
+.message-row {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.message_content .form-control,
+.message_content .form-control:focus {
+  color: black;
+  border: 1px solid #c1ebd7;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px 0 0 20px;
+}
+
+// To style the message itself
+.sender-style, .receiver-style {
+  width: 50%;
+  max-width: 400px;
+  border-radius: 4px;
+  padding: 8px;
+  min-height: 80px;
+}
+
+.sender-style {
+  background-color: #82D7AE;
+  border-radius: 10px;
+}
+
+.receiver-style {
+  background-color: #D9D9D9;
+  border-radius: 10px;
+}
+
+.container-chatroom-navbar-align {
+  margin-top: 85px;
+}
+
+.input-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  left: 0;
+  background-color: white;
+}
+
+.messages {
+  padding-block: 6rem 3rem;
+}
+
+.message {
+  display: flex;
+  width: auto;
+}
+
+.message_content {
+  margin: 0 !important;
+}
+
+#new_message {
+  width: 100%;
+}
+
+
+
+.input-message-chatroom {
+  width: 100%;
+  display: flex;
+}
+
+.button-chatroom {
+  margin: 0;
+  z-index: 4;
+  input {
+    border-radius: 0 20px 20px 0;
+  }
+}
+
+.title-container-chatroom {
+  position: fixed;
+  background-color: white;
+  top: 60px;
+  padding-left: 25px;
+  padding-right: 35px;
+  margin-bottom: 10px;
+}

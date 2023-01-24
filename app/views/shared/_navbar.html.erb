@@ -1,7 +1,8 @@
-<div class="wrapper-navbar" id="sticky">
+<div class="wrapper-navbar <%= "bg-white" if params[:action] != 'show' %>" id="sticky">
   <div>
     <%= link_to "/categories",  class: "navbar-brand" do %>
-      <i class="fas fa-home"></i>
+      <img src="<%= asset_path "LOGO.png" %>" alt="">
+
     <% end %>
   </div>
   <div class="profile-link-img">

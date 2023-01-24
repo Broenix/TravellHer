@@ -1,3 +1,7 @@
+<%# <% content_for :meta_title, "#{@spot.name} is on #{DEFAULT_META["meta_product_name"]}" %>
+<%# <% content_for :meta_description, @spot.description %>
+<%# <% content_for :meta_image, cl_image_path(@spot.photo.path) if @spot.photo.present?  %>
+
 <div class="spot">
   <div class="info-spot">
     <div class="picture-spot">
@@ -7,22 +11,27 @@
       <div class="show-pres-spot p-4">
         <div class="spot-title-rating">
             <h3><%= @spot.name %></h3>
-              <div class="rating-star">
-                <strong><%= @spot.rating.to_i%></strong>
-                <i class="fa-solid fa-star"></i>
+              <div class="show-rating-review">
+                <div class="rating-star">
+                  <strong><%= @spot.rating.to_i%></strong>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="spot-reviews">
+                <%= @spot.reviews.count+10 %> reviews
+                </div>
               </div>
         </div>
-          <p><strong><%= @spot.location %></strong></p>
+          <p>📍<strong><%= @spot.location %></strong></p>
             <div class="line-5"></div>
               <h4>Description</h4>
                 <%= @spot.description %>
                 <div class="line-5"></div>
               <h4>Popular review</h4>
-                <% @reviews.each do |review| %>
-                <%= review.comment %>
-                <% end %>
-          <div class="join-an-spot">
-            <%= link_to "Organize an event",  new_spot_event_path(@spot), class:"button-essential" %>
-          </div>
-      </div>
+                <div class="review-text">
+                  "<%= @reviews.first.comment %>"
+                </div>
+                  <div class="join-an-spot">
+                    <%= link_to "Organize an event",  new_spot_event_path(@spot), class:"button-essential" %>
+                  </div>
+  </div>
 </div>

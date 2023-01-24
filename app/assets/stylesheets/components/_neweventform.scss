@@ -24,11 +24,13 @@
 }
 .event_photo .form-control {
   border: none;
+  color: transparent;
 }
 
 .form-control {
-  color: transparent;
+  color: black;
 }
+
 .form-control::-webkit-file-upload-button {
   visibility: hidden;
 }
@@ -50,7 +52,6 @@
   font-size: 30pt;
 }
 .form-control:focus {
-  color: transparent;
   background-color: transparent;
   border: none;
   outline: 0;
@@ -86,4 +87,15 @@
   border-radius: 18px;
   height: 110px;
   margin-bottom: 30px;
+}
+
+
+.test_lol {
+  border: solid 2px $blue;
+  background-color: white;
+  border-radius: 18px;
+  margin: 0 !important;
+  margin-bottom: 20px;
+  height: 50px;
+  width: 100%;
 }

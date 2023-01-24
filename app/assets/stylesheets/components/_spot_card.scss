@@ -42,7 +42,6 @@
 
 .info-spot-card p {
   line-height: 1.4;
-  opacity: .7;
   margin-bottom: 0;
   margin-top: 8px;
   margin-left: 12px;
@@ -50,17 +49,31 @@
 }
 
 .spot-rating {
-  text-align: right;
   padding-right: 5px;
+  font-style: italic;
+  margin-left: 14px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .link-card-spot {
   height: 120px;
   width: 350px;
   text-decoration: none;
-
 }
 
-.fa-solid {
-  color: rgb(255, 204, 0)
+.link-card-spot i{
+  text-align: left;
+  color: rgb(255, 204, 0);
+  margin-top: 5px;
 }
+
+.spot-reviews {
+  opacity: .7;
+  font-style: italic;
+}
+// .fa-solid:last-child {
+//   margin-right: 20px;
+// }
+

@@ -1,13 +1,15 @@
 <div class="eventform">
-  <div class="title"><h2>Organize an event</h2>
+  <div class="title"><h2>Organize an event in <%= @spot.name %></h2>
   </div>
   <%= simple_form_for [ @spot, @event]  do |f| %>
     <%= f.input :photo, as: :file, label: false, class:'label'%>
     <%= f.input :name, label: 'Name',
     placeholder: 'Event name', class:'label'%>
-    <%= f.input :event_date, html5: true, label: "Date"  %>
-    <%= f.input :name, label: 'Spot',
-    placeholder: 'Event spot', class:'label' %>
+
+    <%= f.input :event_date, html5: true,
+                             label: "Date",
+                             input_html: { data: { controller: "flatpickr" } } %>
+
     <%= f.input :description, label: "Description",
     placeholder: 'Event description', class:'label' %>
     <div class="btn-new">
